@@ -1,0 +1,542 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#PageHeader1
+{
+   background-color: #F5F5F5;
+   background-image: none;
+   box-sizing: border-box;
+}
+#Layer2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#wb_FontAwCliente
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #51CBCE;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_FontAwCliente:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #51CBCE;
+}
+#FontAwCliente
+{
+   height: 123px;
+   width: 140px;
+}
+#FontAwCliente i
+{
+   color: #51CBCE;
+   display: inline-block;
+   font-size: 123px;
+   line-height: 123px;
+   vertical-align: middle;
+   width: 130px;
+}
+#wb_FontAwCliente:hover i
+{
+   color: #337AB7;
+}
+#wb_FontAwEstoque
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #51CBCE;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_FontAwEstoque:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #51CBCE;
+}
+#FontAwEstoque
+{
+   height: 123px;
+   width: 140px;
+}
+#FontAwEstoque i
+{
+   color: #51CBCE;
+   display: inline-block;
+   font-size: 123px;
+   line-height: 123px;
+   vertical-align: middle;
+   width: 104px;
+}
+#wb_FontAwEstoque:hover i
+{
+   color: #337AB7;
+}
+#wb_FontAwEntradas
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_FontAwEntradas:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#FontAwEntradas
+{
+   height: 123px;
+   width: 140px;
+}
+#FontAwEntradas i
+{
+   color: #51CBCE;
+   display: inline-block;
+   font-size: 123px;
+   line-height: 123px;
+   vertical-align: middle;
+   width: 139px;
+}
+#wb_FontAwEntradas:hover i
+{
+   color: #337AB7;
+}
+#wb_FontAwVendas
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_FontAwVendas:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#FontAwVendas
+{
+   height: 123px;
+   width: 140px;
+}
+#FontAwVendas i
+{
+   color: #51CBCE;
+   display: inline-block;
+   font-size: 123px;
+   line-height: 123px;
+   vertical-align: middle;
+   width: 113px;
+}
+#wb_FontAwVendas:hover i
+{
+   color: #337AB7;
+}
+#wb_FontAwRelatorios
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_FontAwRelatorios:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#FontAwRelatorios
+{
+   height: 123px;
+   width: 140px;
+}
+#FontAwRelatorios i
+{
+   color: #51CBCE;
+   display: inline-block;
+   font-size: 123px;
+   line-height: 123px;
+   vertical-align: middle;
+   width: 139px;
+}
+#wb_FontAwRelatorios:hover i
+{
+   color: #337AB7;
+}
+#wb_FontAwConfig
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#wb_FontAwConfig:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#FontAwConfig
+{
+   height: 123px;
+   width: 140px;
+}
+#FontAwConfig i
+{
+   color: #51CBCE;
+   display: inline-block;
+   font-size: 123px;
+   line-height: 123px;
+   vertical-align: middle;
+   width: 104px;
+}
+#wb_FontAwConfig:hover i
+{
+   color: #337AB7;
+}
+#wb_TextClientes 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextClientes div
+{
+   text-align: center;
+}
+#wb_TextEstoques 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextEstoques div
+{
+   text-align: center;
+}
+#wb_TextEntradas 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextEntradas div
+{
+   text-align: center;
+}
+#wb_TextVendas 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextVendas div
+{
+   text-align: center;
+}
+#wb_TextRelatorios 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextRelatorios div
+{
+   text-align: center;
+}
+#wb_TextConfig 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextConfig div
+{
+   text-align: center;
+}
+#wb_FontAwConfig
+{
+   position: absolute;
+   left: 810px;
+   top: 10px;
+   width: 140px;
+   height: 123px;
+   text-align: center;
+   z-index: 10;
+}
+#Layer2
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 71px;
+   width: 970px;
+   height: 291px;
+   z-index: 13;
+}
+#wb_FontAwEntradas
+{
+   position: absolute;
+   left: 330px;
+   top: 10px;
+   width: 140px;
+   height: 123px;
+   text-align: center;
+   z-index: 4;
+}
+#wb_TextConfig
+{
+   position: absolute;
+   left: 810px;
+   top: 139px;
+   width: 140px;
+   height: 16px;
+   text-align: center;
+   z-index: 11;
+}
+#wb_TextEstoques
+{
+   position: absolute;
+   left: 170px;
+   top: 139px;
+   width: 140px;
+   height: 16px;
+   text-align: center;
+   z-index: 3;
+}
+#wb_FontAwRelatorios
+{
+   position: absolute;
+   left: 650px;
+   top: 10px;
+   width: 140px;
+   height: 123px;
+   text-align: center;
+   z-index: 8;
+}
+#wb_TextEntradas
+{
+   position: absolute;
+   left: 325px;
+   top: 137px;
+   width: 150px;
+   height: 16px;
+   text-align: center;
+   z-index: 5;
+}
+#PageHeader1
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 71px;
+   z-index: 14;
+}
+#wb_FontAwVendas
+{
+   position: absolute;
+   left: 490px;
+   top: 10px;
+   width: 140px;
+   height: 123px;
+   text-align: center;
+   z-index: 6;
+}
+#wb_FontAwEstoque
+{
+   position: absolute;
+   left: 170px;
+   top: 10px;
+   width: 140px;
+   height: 123px;
+   text-align: center;
+   z-index: 2;
+}
+#wb_TextClientes
+{
+   position: absolute;
+   left: 10px;
+   top: 139px;
+   width: 140px;
+   height: 16px;
+   text-align: center;
+   z-index: 1;
+}
+#wb_TextVendas
+{
+   position: absolute;
+   left: 490px;
+   top: 139px;
+   width: 140px;
+   height: 16px;
+   text-align: center;
+   z-index: 7;
+}
+#wb_FontAwCliente
+{
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   width: 140px;
+   height: 123px;
+   text-align: center;
+   z-index: 0;
+}
+#wb_TextRelatorios
+{
+   position: absolute;
+   left: 650px;
+   top: 139px;
+   width: 140px;
+   height: 16px;
+   text-align: center;
+   z-index: 9;
+}
+@media only screen and (max-width: 969px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_FontAwCliente
+{
+   left: 10px;
+   top: 81px;
+   width: 140px;
+   height: 123px;
+   visibility: visible;
+   display: inline;
+   color: #51CBCE;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   margin: 0;
+   padding: 0;
+}
+#FontAwCliente
+{
+   width: 140px;
+   height: 123px;
+}
+#FontAwCliente i
+{
+   line-height: 123px;
+   font-size: 123px;
+   width: 130px;
+}
+#wb_FontAwEstoque
+{
+   left: 170px;
+   top: 81px;
+   width: 140px;
+   height: 123px;
+   visibility: visible;
+   display: inline;
+   color: #51CBCE;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   margin: 0;
+   padding: 0;
+}
+#FontAwEstoque
+{
+   width: 140px;
+   height: 123px;
+}
+#FontAwEstoque i
+{
+   line-height: 123px;
+   font-size: 123px;
+   width: 104px;
+}
+#wb_FontAwEntradas
+{
+   left: 330px;
+   top: 81px;
+   width: 140px;
+   height: 123px;
+   visibility: visible;
+   display: inline;
+   color: #51CBCE;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   margin: 0;
+   padding: 0;
+}
+#FontAwEntradas
+{
+   width: 140px;
+   height: 123px;
+}
+#FontAwEntradas i
+{
+   line-height: 123px;
+   font-size: 123px;
+   width: 139px;
+}
+}

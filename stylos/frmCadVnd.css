@@ -1,0 +1,3615 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#idTopo
+{
+   background-color: #C0C0C0;
+   background-image: none;
+   box-sizing: border-box;
+}
+#LayerCorpo
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_TextNovaVnd 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextNovaVnd div
+{
+   text-align: left;
+}
+#tblItens
+{
+   border: 1px solid #C5C5C5;
+   background-color: transparent;
+   background-image: none;
+   border-collapse: separate;
+   border-spacing: 0px;
+   margin: 0;
+}
+#tblItens td
+{
+   padding: 0;
+}
+#tblItens .cell0
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 7.59%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 7%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 25.67%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: middle;
+   width: 8.17%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 12.25%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 16.34%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell6
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell7
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 7.59%;
+   height: 13.76%;
+   font-family: Arial;
+   font-size: 13px;
+   line-height: 16px;
+}
+#tblItens .cell8
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: middle;
+   width: 25.67%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell9
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 8.17%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell10
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: right;
+   vertical-align: middle;
+   width: 12.25%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell11
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: right;
+   vertical-align: middle;
+   width: 16.34%;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell12
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: right;
+   vertical-align: middle;
+   height: 13.76%;
+   font-family: "PT Sans";
+   font-size: 13px;
+   line-height: 17px;
+}
+#tblItens .cell13
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: middle;
+   height: 12.39%;
+}
+#tblItens .cell14
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: middle;
+   height: 16.52%;
+}
+#tblItens .cell15
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: middle;
+   width: 16.34%;
+   height: 16.52%;
+   font-family: Arial;
+   font-size: 15px;
+   line-height: 16px;
+}
+#tblItens .cell16
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: right;
+   vertical-align: middle;
+   height: 16.52%;
+   font-family: Arial;
+   font-size: 16px;
+   line-height: 19px;
+}
+#tblItens .cell17
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: middle;
+   height: 20.65%;
+}
+#tblItens .cell18
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+   text-align: left;
+   vertical-align: middle;
+   height: 20.65%;
+   font-size: 0;
+}
+#wb_FrmDadosVnd
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+}
+#wb_TextData 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextData div
+{
+   text-align: left;
+}
+#EditboxData
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxData:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#EditboxCliente
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxCliente:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#ButtonCriarVnd
+{
+   border: 1px solid #C5C5C5;
+   border-radius: 4px;
+   background-color: #F6F6F6;
+   background-image: none;
+   color: #00BFFF;
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+}
+#LineDados
+{
+   border-color: #C5C5C5;
+   border-style: solid;
+   border-bottom-width: 1px;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   height: 0 !important;
+   line-height: 0px !important;
+   margin: 0;
+   padding: 0;
+}
+#LineItens
+{
+   border-color: #C5C5C5;
+   border-style: solid;
+   border-bottom-width: 1px;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   height: 0 !important;
+   line-height: 0px !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_TextCliente 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextCliente div
+{
+   text-align: left;
+}
+#wb_TextVendedor 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextVendedor div
+{
+   text-align: left;
+}
+#wb_TextPlano 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextPlano div
+{
+   text-align: left;
+}
+#wb_TextResulTel 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextResulTel div
+{
+   text-align: left;
+}
+#wb_TextCidade 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextCidade div
+{
+   text-align: left;
+}
+#wb_TextResultCid 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextResultCid div
+{
+   text-align: left;
+}
+#wb_TextBairro 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextBairro div
+{
+   text-align: left;
+}
+#wb_TextResultBai 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextResultBai div
+{
+   text-align: left;
+}
+#wb_FormItensVnd
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+}
+#ButtonIncluirItem
+{
+   border: 1px solid #C5C5C5;
+   border-radius: 4px;
+   background-color: #F6F6F6;
+   background-image: none;
+   color: #00BFFF;
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+}
+#EditboxVlrUnit
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxVlrUnit:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#wb_TextVlrUnit 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextVlrUnit div
+{
+   text-align: right;
+}
+#wb_TextProduto 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextProduto div
+{
+   text-align: left;
+}
+#wb_TextQuantidade 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextQuantidade div
+{
+   text-align: right;
+}
+#EditboxQuantidade
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxQuantidade:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#EditboxProduto
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxProduto:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#LineTabela
+{
+   border-color: #C5C5C5;
+   border-style: solid;
+   border-bottom-width: 1px;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   height: 0 !important;
+   line-height: 0px !important;
+   margin: 0;
+   padding: 0;
+}
+#wb_TextUF 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextUF div
+{
+   text-align: left;
+}
+#wb_TextResultUF 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextResultUF div
+{
+   text-align: left;
+}
+#wb_TextGrade 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_TextGrade div
+{
+   text-align: center;
+}
+#ButtonCancelar
+{
+   border: 1px solid #B22222;
+   border-radius: 4px;
+   background-color: #DC143C;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+}
+#ButtonFinalizar
+{
+   border: 1px solid #4169E1;
+   border-radius: 4px;
+   background-color: #1E90FF;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+}
+#wb_TextSit 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextSit div
+{
+   text-align: left;
+}
+#wb_TextTelefone 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextTelefone div
+{
+   text-align: left;
+}
+#wb_TextEndereco 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextEndereco div
+{
+   text-align: left;
+}
+#wb_TextResultEnd 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextResultEnd div
+{
+   text-align: left;
+}
+#wb_TextIdVnd 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextIdVnd div
+{
+   text-align: left;
+}
+#wb_TextDescPerc 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextDescPerc div
+{
+   text-align: right;
+}
+#EditboxDescPerc
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxDescPerc:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#wb_TextDescVlr 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextDescVlr div
+{
+   text-align: right;
+}
+#EditboxDescVlr
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxDescVlr:focus
+{
+   border-color: #00BFFF;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(0,191,255,0.60);
+   outline: 0;
+}
+#wb_TextTotalItem 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextTotalItem div
+{
+   text-align: left;
+}
+#wb_TextVlrItem 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextVlrItem div
+{
+   text-align: right;
+}
+#wb_TextStatus 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_TextStatus div
+{
+   text-align: left;
+}
+#ComboboxGrade
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #808080;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 11px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#ComboboxGrade:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#ComboboxVendedor
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #808080;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 11px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#ComboboxVendedor:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#ComboboxPlano
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #808080;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 11px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#ComboboxPlano:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#wb_TextResultBai
+{
+   position: absolute;
+   left: 484px;
+   top: 183px;
+   width: 176px;
+   height: 18px;
+   z-index: 1;
+}
+#ComboboxVendedor
+{
+   position: absolute;
+   left: 96px;
+   top: 22px;
+   width: 180px;
+   height: 26px;
+   z-index: 3;
+}
+#wb_TextTelefone
+{
+   position: absolute;
+   left: 24px;
+   top: 163px;
+   width: 140px;
+   height: 18px;
+   z-index: 79;
+}
+#ButtonFinalizar
+{
+   display: inline-block;
+   width: 273px;
+   height: 25px;
+   z-index: 27;
+}
+#wb_TextGrade
+{
+   position: absolute;
+   left: 288px;
+   top: 4px;
+   width: 52px;
+   height: 18px;
+   text-align: center;
+   z-index: 13;
+}
+#LineDados
+{
+   position: absolute;
+   left: 20px;
+   top: 60px;
+   width: 912px;
+   z-index: 30;
+}
+#wb_TextResultEnd
+{
+   position: absolute;
+   left: 168px;
+   top: 183px;
+   width: 312px;
+   height: 18px;
+   z-index: 1;
+}
+#EditboxQuantidade
+{
+   position: absolute;
+   left: 354px;
+   top: 24px;
+   width: 90px;
+   height: 26px;
+   z-index: 16;
+}
+#ButtonCancelar
+{
+   display: inline-block;
+   width: 174px;
+   height: 25px;
+   z-index: 26;
+}
+#wb_TextDescPerc
+{
+   position: absolute;
+   left: 560px;
+   top: 4px;
+   width: 110px;
+   height: 18px;
+   text-align: right;
+   z-index: 22;
+}
+#wb_TextSit
+{
+   position: absolute;
+   left: 836px;
+   top: 2px;
+   width: 75px;
+   height: 18px;
+   z-index: 9;
+}
+#EditboxData
+{
+   position: absolute;
+   left: 4px;
+   top: 22px;
+   width: 80px;
+   height: 26px;
+   z-index: 1;
+}
+#wb_TextProduto
+{
+   position: absolute;
+   left: 4px;
+   top: 4px;
+   width: 280px;
+   height: 18px;
+   z-index: 11;
+}
+#ComboboxPlano
+{
+   position: absolute;
+   left: 280px;
+   top: 22px;
+   width: 144px;
+   height: 26px;
+   z-index: 5;
+}
+#wb_FrmDadosVnd
+{
+   position: absolute;
+   left: 20px;
+   top: 72px;
+   width: 911px;
+   height: 92px;
+   z-index: 31;
+}
+#idTopo
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 39px;
+   z-index: 82;
+}
+#wb_TextResultCid
+{
+   position: absolute;
+   left: 664px;
+   top: 183px;
+   width: 132px;
+   height: 18px;
+   z-index: 74;
+}
+#wb_TextData
+{
+   position: absolute;
+   left: 4px;
+   top: 2px;
+   width: 90px;
+   height: 18px;
+   z-index: 0;
+}
+#LayerCorpo
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 39px;
+   width: 100%;
+   height: 469px;
+   z-index: 71;
+}
+#wb_TextVlrItem
+{
+   position: absolute;
+   left: 824px;
+   top: 4px;
+   width: 87px;
+   height: 18px;
+   text-align: right;
+   z-index: 20;
+}
+#ComboboxGrade
+{
+   position: absolute;
+   left: 288px;
+   top: 24px;
+   width: 52px;
+   height: 26px;
+   z-index: 14;
+}
+#LineItens
+{
+   position: absolute;
+   left: 20px;
+   top: 176px;
+   width: 912px;
+   z-index: 32;
+}
+#ButtonCriarVnd
+{
+   position: absolute;
+   left: 780px;
+   top: 22px;
+   width: 131px;
+   height: 26px;
+   z-index: 10;
+}
+#wb_TextStatus
+{
+   position: absolute;
+   left: 780px;
+   top: 2px;
+   width: 56px;
+   height: 18px;
+   z-index: 8;
+}
+#wb_TextEndereco
+{
+   position: absolute;
+   left: 168px;
+   top: 163px;
+   width: 312px;
+   height: 18px;
+   z-index: 1;
+}
+#wb_TextResultUF
+{
+   position: absolute;
+   left: 800px;
+   top: 183px;
+   width: 131px;
+   height: 18px;
+   z-index: 78;
+}
+#ButtonIncluirItem
+{
+   position: absolute;
+   left: 780px;
+   top: 24px;
+   width: 131px;
+   height: 26px;
+   z-index: 21;
+}
+#wb_TextVlrUnit
+{
+   position: absolute;
+   left: 448px;
+   top: 4px;
+   width: 110px;
+   height: 18px;
+   text-align: right;
+   z-index: 17;
+}
+#EditboxProduto
+{
+   position: absolute;
+   left: 4px;
+   top: 24px;
+   width: 270px;
+   height: 26px;
+   z-index: 12;
+}
+#wb_TextCidade
+{
+   position: absolute;
+   left: 664px;
+   top: 163px;
+   width: 132px;
+   height: 18px;
+   z-index: 73;
+}
+#EditboxDescPerc
+{
+   position: absolute;
+   left: 570px;
+   top: 24px;
+   width: 100px;
+   height: 26px;
+   z-index: 23;
+}
+#wb_TextUF
+{
+   position: absolute;
+   left: 800px;
+   top: 163px;
+   width: 131px;
+   height: 18px;
+   z-index: 77;
+}
+#wb_TextBairro
+{
+   position: absolute;
+   left: 484px;
+   top: 163px;
+   width: 176px;
+   height: 18px;
+   z-index: 1;
+}
+#wb_TextDescVlr
+{
+   position: absolute;
+   left: 672px;
+   top: 4px;
+   width: 104px;
+   height: 18px;
+   text-align: right;
+   z-index: 24;
+}
+#EditboxVlrUnit
+{
+   position: absolute;
+   left: 458px;
+   top: 24px;
+   width: 100px;
+   height: 26px;
+   z-index: 18;
+}
+#wb_TextCliente
+{
+   position: absolute;
+   left: 428px;
+   top: 2px;
+   width: 350px;
+   height: 18px;
+   z-index: 6;
+}
+#LineTabela
+{
+   position: absolute;
+   left: 20px;
+   top: 252px;
+   width: 912px;
+   z-index: 34;
+}
+#wb_TextVendedor
+{
+   position: absolute;
+   left: 96px;
+   top: 2px;
+   width: 180px;
+   height: 18px;
+   z-index: 2;
+}
+#wb_TextIdVnd
+{
+   position: absolute;
+   left: 176px;
+   top: 20px;
+   width: 64px;
+   height: 24px;
+   z-index: 29;
+}
+#wb_TextQuantidade
+{
+   position: absolute;
+   left: 344px;
+   top: 4px;
+   width: 100px;
+   height: 18px;
+   text-align: right;
+   z-index: 15;
+}
+#tblItens
+{
+   position: absolute;
+   left: 23px;
+   top: 262px;
+   width: 908px;
+   height: 132px;
+   z-index: 35;
+}
+#wb_TextNovaVnd
+{
+   position: absolute;
+   left: 20px;
+   top: 20px;
+   width: 156px;
+   height: 24px;
+   z-index: 28;
+}
+#wb_TextResulTel
+{
+   position: absolute;
+   left: 24px;
+   top: 183px;
+   width: 140px;
+   height: 18px;
+   z-index: 72;
+}
+#EditboxDescVlr
+{
+   position: absolute;
+   left: 682px;
+   top: 24px;
+   width: 94px;
+   height: 26px;
+   z-index: 25;
+}
+#wb_TextTotalItem
+{
+   position: absolute;
+   left: 780px;
+   top: 4px;
+   width: 44px;
+   height: 18px;
+   z-index: 19;
+}
+#wb_FormItensVnd
+{
+   position: absolute;
+   left: 20px;
+   top: 188px;
+   width: 911px;
+   height: 52px;
+   z-index: 33;
+}
+#EditboxCliente
+{
+   position: absolute;
+   left: 428px;
+   top: 22px;
+   width: 340px;
+   height: 26px;
+   z-index: 7;
+}
+#wb_TextPlano
+{
+   position: absolute;
+   left: 280px;
+   top: 2px;
+   width: 144px;
+   height: 18px;
+   z-index: 4;
+}
+@media only screen and (min-width: 600px) and (max-width: 969px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#idTopo
+{
+   top: 0px;
+   height: 39px;
+   visibility: visible;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #C0C0C0;
+   background-image: none;
+}
+#idTopo
+{
+   width: 100%;
+}
+#LayerCorpo
+{
+   left: 0px;
+   top: 39px;
+   height: 573px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#LayerCorpo
+{
+   width: 100%;
+}
+#wb_TextNovaVnd
+{
+   left: 20px;
+   top: 20px;
+   width: 156px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextNovaVnd
+{
+   margin: 0;
+   padding: 0;
+}
+#tblItens
+{
+   left: 20px;
+   top: 393px;
+   width: 564px;
+   height: 138px;
+   visibility: visible;
+   display: table;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#tblItens .cell0
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell1
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell2
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell3
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 17px;
+}
+#tblItens .cell4
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell5
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell6
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell7
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 16px;
+}
+#tblItens .cell8
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 17px;
+}
+#tblItens .cell9
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   line-height: 17px;
+}
+#tblItens .cell10
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: right;
+   line-height: 17px;
+}
+#tblItens .cell11
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: right;
+   line-height: 17px;
+}
+#tblItens .cell12
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 13px;
+   text-align: right;
+   line-height: 17px;
+}
+#tblItens .cell13
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#tblItens .cell14
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#tblItens .cell15
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 12px;
+   text-align: center;
+   line-height: 15px;
+}
+#tblItens .cell16
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: right;
+   line-height: 19px;
+}
+#tblItens .cell17
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#tblItens .cell18
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#wb_FrmDadosVnd
+{
+   left: 20px;
+   top: 65px;
+   width: 564px;
+   height: 181px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_TextData
+{
+   left: 4px;
+   top: 2px;
+   width: 90px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextData
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxData
+{
+   left: 4px;
+   top: 22px;
+   width: 80px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxData
+{
+   line-height: 16px;
+}
+#EditboxCliente
+{
+   left: 4px;
+   top: 69px;
+   width: 340px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxCliente
+{
+   line-height: 16px;
+}
+#ButtonCriarVnd
+{
+   left: 356px;
+   top: 69px;
+   width: 202px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #00BFFF;
+   font-size: 13px;
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #F6F6F6;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+}
+#LineDados
+{
+   left: 20px;
+   top: 53px;
+   width: 560px;
+   height: 1px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#LineDados
+{
+   border-color: #C5C5C5;
+   border-bottom-width: 1px;
+}
+#LineItens
+{
+   left: 20px;
+   top: 257px;
+   width: 560px;
+   height: 1px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#LineItens
+{
+   border-color: #C5C5C5;
+   border-bottom-width: 1px;
+}
+#wb_TextCliente
+{
+   left: 4px;
+   top: 49px;
+   width: 350px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextCliente
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextVendedor
+{
+   left: 96px;
+   top: 2px;
+   width: 258px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextVendedor
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextPlano
+{
+   left: 356px;
+   top: 2px;
+   width: 202px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextPlano
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResulTel
+{
+   left: 24px;
+   top: 221px;
+   width: 140px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResulTel
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextCidade
+{
+   left: 264px;
+   top: 241px;
+   width: 180px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextCidade
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultCid
+{
+   left: 264px;
+   top: 261px;
+   width: 180px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultCid
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextBairro
+{
+   left: 24px;
+   top: 241px;
+   width: 236px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextBairro
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultBai
+{
+   left: 24px;
+   top: 261px;
+   width: 236px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultBai
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_FormItensVnd
+{
+   left: 20px;
+   top: 269px;
+   width: 564px;
+   height: 104px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#ButtonIncluirItem
+{
+   left: 344px;
+   top: 72px;
+   width: 214px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #00BFFF;
+   font-size: 13px;
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #F6F6F6;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+}
+#EditboxVlrUnit
+{
+   left: 448px;
+   top: 24px;
+   width: 100px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxVlrUnit
+{
+   line-height: 16px;
+}
+#wb_TextVlrUnit
+{
+   left: 448px;
+   top: 4px;
+   width: 110px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextVlrUnit
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextProduto
+{
+   left: 4px;
+   top: 4px;
+   width: 280px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextProduto
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextQuantidade
+{
+   left: 344px;
+   top: 4px;
+   width: 100px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextQuantidade
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxQuantidade
+{
+   left: 344px;
+   top: 24px;
+   width: 90px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxQuantidade
+{
+   line-height: 16px;
+}
+#EditboxProduto
+{
+   left: 4px;
+   top: 24px;
+   width: 270px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxProduto
+{
+   line-height: 16px;
+}
+#LineTabela
+{
+   left: 20px;
+   top: 381px;
+   width: 560px;
+   height: 1px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#LineTabela
+{
+   border-color: #C5C5C5;
+   border-bottom-width: 1px;
+}
+#wb_TextUF
+{
+   left: 447px;
+   top: 241px;
+   width: 131px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextUF
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultUF
+{
+   left: 447px;
+   top: 261px;
+   width: 131px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultUF
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextGrade
+{
+   left: 288px;
+   top: 4px;
+   width: 52px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextGrade
+{
+   margin: 0;
+   padding: 0;
+}
+#ButtonCancelar
+{
+   width: 101px;
+   height: 25px;
+   visibility: visible;
+   display: inline-block;
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DC143C;
+   background-image: none;
+   border: 1px solid #DC143C;
+   border-radius: 4px;
+   margin: 0;
+}
+#ButtonFinalizar
+{
+   width: 168px;
+   height: 25px;
+   visibility: visible;
+   display: inline-block;
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #1E90FF;
+   background-image: none;
+   border: 1px solid #1E90FF;
+   border-radius: 4px;
+   margin: 0;
+}
+#wb_TextSit
+{
+   left: 483px;
+   top: 49px;
+   width: 75px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextSit
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextTelefone
+{
+   left: 24px;
+   top: 201px;
+   width: 140px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextTelefone
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextEndereco
+{
+   left: 168px;
+   top: 201px;
+   width: 410px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextEndereco
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultEnd
+{
+   left: 168px;
+   top: 221px;
+   width: 410px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultEnd
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextIdVnd
+{
+   left: 176px;
+   top: 20px;
+   width: 64px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextIdVnd
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextDescPerc
+{
+   left: 4px;
+   top: 52px;
+   width: 168px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextDescPerc
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxDescPerc
+{
+   left: 4px;
+   top: 72px;
+   width: 158px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxDescPerc
+{
+   line-height: 16px;
+}
+#wb_TextDescVlr
+{
+   left: 176px;
+   top: 52px;
+   width: 164px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextDescVlr
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxDescVlr
+{
+   left: 176px;
+   top: 72px;
+   width: 154px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxDescVlr
+{
+   line-height: 16px;
+}
+#wb_TextTotalItem
+{
+   left: 424px;
+   top: 52px;
+   width: 44px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextTotalItem
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextVlrItem
+{
+   left: 471px;
+   top: 52px;
+   width: 87px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextVlrItem
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextStatus
+{
+   left: 428px;
+   top: 49px;
+   width: 56px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextStatus
+{
+   margin: 0;
+   padding: 0;
+}
+#ComboboxGrade
+{
+   left: 288px;
+   top: 24px;
+   width: 52px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #808080;
+   font-size: 11px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#ComboboxVendedor
+{
+   left: 96px;
+   top: 22px;
+   width: 258px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #808080;
+   font-size: 11px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#ComboboxPlano
+{
+   left: 356px;
+   top: 22px;
+   width: 202px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #808080;
+   font-size: 11px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+}
+@media only screen and (max-width: 599px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#idTopo
+{
+   top: 0px;
+   height: 39px;
+   visibility: visible;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #C0C0C0;
+   background-image: none;
+}
+#idTopo
+{
+   width: 100%;
+}
+#LayerCorpo
+{
+   left: 0px;
+   top: 39px;
+   height: 569px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#LayerCorpo
+{
+   width: 100%;
+}
+#wb_TextNovaVnd
+{
+   left: 8px;
+   top: 9px;
+   width: 156px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextNovaVnd
+{
+   margin: 0;
+   padding: 0;
+}
+#tblItens
+{
+   left: 8px;
+   top: 405px;
+   width: 344px;
+   height: 144px;
+   visibility: visible;
+   display: table;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#tblItens .cell0
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: center;
+   line-height: 10px;
+}
+#tblItens .cell1
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: center;
+   line-height: 10px;
+}
+#tblItens .cell2
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: center;
+   line-height: 10px;
+}
+#tblItens .cell3
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: left;
+   line-height: 10px;
+}
+#tblItens .cell4
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: center;
+   line-height: 10px;
+}
+#tblItens .cell5
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: center;
+   line-height: 10px;
+}
+#tblItens .cell6
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 8px;
+   text-align: center;
+   line-height: 10px;
+}
+#tblItens .cell7
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: center;
+   line-height: 12px;
+}
+#tblItens .cell8
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: left;
+   line-height: 11px;
+}
+#tblItens .cell9
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: center;
+   line-height: 11px;
+}
+#tblItens .cell10
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: right;
+   line-height: 11px;
+}
+#tblItens .cell11
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: right;
+   line-height: 11px;
+}
+#tblItens .cell12
+{
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: right;
+   line-height: 11px;
+}
+#tblItens .cell13
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#tblItens .cell14
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#tblItens .cell15
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: center;
+   line-height: 11px;
+}
+#tblItens .cell16
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 9.3px;
+   text-align: right;
+   line-height: 11px;
+}
+#tblItens .cell17
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#tblItens .cell18
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   line-height: 16px;
+}
+#wb_FrmDadosVnd
+{
+   left: 8px;
+   top: 49px;
+   width: 344px;
+   height: 144px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_TextData
+{
+   left: 4px;
+   top: 2px;
+   width: 90px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextData
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxData
+{
+   left: 4px;
+   top: 22px;
+   width: 80px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxData
+{
+   line-height: 16px;
+}
+#EditboxCliente
+{
+   left: 4px;
+   top: 69px;
+   width: 326px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxCliente
+{
+   line-height: 16px;
+}
+#ButtonCriarVnd
+{
+   left: 184px;
+   top: 116px;
+   width: 156px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #00BFFF;
+   font-size: 13px;
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #F6F6F6;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+}
+#LineDados
+{
+   left: 8px;
+   top: 41px;
+   width: 340px;
+   height: 1px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#LineDados
+{
+   border-color: #C5C5C5;
+   border-bottom-width: 1px;
+}
+#LineItens
+{
+   left: 8px;
+   top: 201px;
+   width: 340px;
+   height: 1px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#LineItens
+{
+   border-color: #C5C5C5;
+   border-bottom-width: 1px;
+}
+#wb_TextCliente
+{
+   left: 4px;
+   top: 49px;
+   width: 336px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextCliente
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextVendedor
+{
+   left: 96px;
+   top: 2px;
+   width: 244px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextVendedor
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextPlano
+{
+   left: 4px;
+   top: 96px;
+   width: 176px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextPlano
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResulTel
+{
+   left: 8px;
+   top: 732px;
+   width: 140px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResulTel
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextCidade
+{
+   left: 8px;
+   top: 672px;
+   width: 180px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextCidade
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultCid
+{
+   left: 8px;
+   top: 692px;
+   width: 180px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultCid
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextBairro
+{
+   left: 8px;
+   top: 636px;
+   width: 236px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextBairro
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultBai
+{
+   left: 8px;
+   top: 656px;
+   width: 236px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultBai
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_FormItensVnd
+{
+   left: 8px;
+   top: 209px;
+   width: 344px;
+   height: 180px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#ButtonIncluirItem
+{
+   left: 140px;
+   top: 148px;
+   width: 198px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #00BFFF;
+   font-size: 13px;
+   font-family: "PT Sans";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #F6F6F6;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+}
+#EditboxVlrUnit
+{
+   left: 176px;
+   top: 72px;
+   width: 153px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxVlrUnit
+{
+   line-height: 16px;
+}
+#wb_TextVlrUnit
+{
+   left: 176px;
+   top: 52px;
+   width: 163px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextVlrUnit
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextProduto
+{
+   left: 4px;
+   top: 4px;
+   width: 280px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextProduto
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextQuantidade
+{
+   left: 4px;
+   top: 52px;
+   width: 168px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextQuantidade
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxQuantidade
+{
+   left: 4px;
+   top: 72px;
+   width: 158px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxQuantidade
+{
+   line-height: 16px;
+}
+#EditboxProduto
+{
+   left: 4px;
+   top: 24px;
+   width: 270px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxProduto
+{
+   line-height: 16px;
+}
+#LineTabela
+{
+   left: 8px;
+   top: 397px;
+   width: 340px;
+   height: 1px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#LineTabela
+{
+   border-color: #C5C5C5;
+   border-bottom-width: 1px;
+}
+#wb_TextUF
+{
+   left: 148px;
+   top: 712px;
+   width: 131px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextUF
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultUF
+{
+   left: 148px;
+   top: 732px;
+   width: 131px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultUF
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextGrade
+{
+   left: 288px;
+   top: 4px;
+   width: 52px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextGrade
+{
+   margin: 0;
+   padding: 0;
+}
+#ButtonCancelar
+{
+   width: 61px;
+   height: 25px;
+   visibility: visible;
+   display: inline-block;
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DC143C;
+   background-image: none;
+   border: 1px solid #B22222;
+   border-radius: 4px;
+   margin: 0;
+}
+#ButtonFinalizar
+{
+   width: 82px;
+   height: 25px;
+   visibility: visible;
+   display: inline-block;
+   color: #FFFFFF;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #1E90FF;
+   background-image: none;
+   border: 1px solid #4169E1;
+   border-radius: 4px;
+   margin: 0;
+}
+#wb_TextSit
+{
+   left: 264px;
+   top: 96px;
+   width: 75px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextSit
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextTelefone
+{
+   left: 8px;
+   top: 712px;
+   width: 140px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextTelefone
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextEndereco
+{
+   left: 8px;
+   top: 596px;
+   width: 304px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextEndereco
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextResultEnd
+{
+   left: 12px;
+   top: 620px;
+   width: 280px;
+   height: 18px;
+   visibility: hidden;
+   display: none;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextResultEnd
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextIdVnd
+{
+   left: 164px;
+   top: 9px;
+   width: 64px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextIdVnd
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextDescPerc
+{
+   left: 4px;
+   top: 100px;
+   width: 168px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextDescPerc
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxDescPerc
+{
+   left: 4px;
+   top: 120px;
+   width: 158px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxDescPerc
+{
+   line-height: 16px;
+}
+#wb_TextDescVlr
+{
+   left: 176px;
+   top: 100px;
+   width: 163px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextDescVlr
+{
+   margin: 0;
+   padding: 0;
+}
+#EditboxDescVlr
+{
+   left: 176px;
+   top: 120px;
+   width: 153px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#EditboxDescVlr
+{
+   line-height: 16px;
+}
+#wb_TextTotalItem
+{
+   left: 4px;
+   top: 156px;
+   width: 44px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextTotalItem
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextVlrItem
+{
+   left: 48px;
+   top: 156px;
+   width: 87px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextVlrItem
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_TextStatus
+{
+   left: 212px;
+   top: 96px;
+   width: 56px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_TextStatus
+{
+   margin: 0;
+   padding: 0;
+}
+#ComboboxGrade
+{
+   left: 288px;
+   top: 24px;
+   width: 52px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #808080;
+   font-size: 11px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#ComboboxVendedor
+{
+   left: 96px;
+   top: 22px;
+   width: 244px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #808080;
+   font-size: 11px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+#ComboboxPlano
+{
+   left: 4px;
+   top: 116px;
+   width: 176px;
+   height: 26px;
+   visibility: visible;
+   display: inline;
+   color: #808080;
+   font-size: 11px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+}
+}
