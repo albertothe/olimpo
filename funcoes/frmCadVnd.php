@@ -71,7 +71,8 @@ if ($operacao == 'novo'){
 				cli.endereco AS endereco,
 				cli.cidade AS cidade,
 				cli.bairro AS bairro,
-				cli.uf AS uf
+				cli.uf AS uf,
+				mov.vlrtotal AS vlrtotal
 				FROM
 				movimento mov
 				INNER JOIN
@@ -89,25 +90,27 @@ if ($operacao == 'novo'){
 	
 	if ($qntlinha == 1){
 
-		$indice = 0;
-		while ( $obj = pg_fetch_object ( $resultConsulta ) ) {
-			$codMovimento [] = $obj->codmovimento;
-			$dataMov [] = $obj->datamov;
-			$cliente [] = $obj->cliente;
-			$forma [] = $obj->formapagamento;
-			$vendedor [] = $obj->vendedor;
-			$celular [] = $obj->celular;
-			$endereco [] = $obj->endereco;
-			$cidade [] = $obj->cidade;
-			$bairro [] = $obj->bairro;
-			$uf [] = $obj->uf;
-			$indice ++;
-		}
+		$rs = pg_fetch_array($resultConsulta );
 		
-		$smarty->assign ( "codMovimento", $codMovimento );
+		$codMovimento = $rs['codmovimento'];
+		$dataMov = $rs['datamov'];
+		$codCliente = $rs['codcliente'];
+		$cliente = $rs['cliente'];
+		$forma = $rs['formapagamento'];
+		$vendedor = $rs['vendedor'];
+		$celular = $rs['celular'];
+		$endereco = $rs['endereco'];
+		$cidade = $rs['cidade'];
+		$bairro = $rs['bairro'];
+		$uf = $rs['uf'];
+		$vlrTotal = $rs['vlrtotal'];
+		
+		
+		$smarty->assign ( "codmovimento", $codMovimento );
 		$smarty->assign ( "dataMov", $dataMov);
 		$smarty->assign ( "vlrTotal", $vlrTotal);
 		$smarty->assign ( "cliente", $cliente );
+		$smarty->assign ( "codCli", $codCliente );
 		$smarty->assign ( "forma", $forma );
 		$smarty->assign ( "vendedor", $vendedor );
 		$smarty->assign ( "celular", $celular );

@@ -32,8 +32,27 @@ if($codmovimento){
 	$qntlinha = pg_num_rows ( $resultConsulta );	
 
 	if($qntlinha == 1){
-		echo "Aqui";
-		Exit;
+		$sqlUpdateMov = 'UPDATE movimento SET datamov = '."'$datamov'".',codusuario = '."$vendedor".',codcontato = '."$codcliente".',codforma = '."$formapagamento".' WHERE codmovimento = '."$codmovimento";
+
+		$resultUpdateMov = pg_query($conexao, $sqlUpdateMov);
+		
+		$regUpdateMov = pg_affected_rows($resultUpdateMov);
+		
+		if ($regUpdateMov == 1 ){
+			pg_query ($conexao, "commit");
+			pg_close($conexao);
+			echo "<script>
+		    window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+		    alert('Cadastrado ou atualizado com sucesso!');
+		    </script>";
+		} else {
+			pg_query ($conexao, "rollback");
+			pg_close($conexao);
+			echo "<script>
+		    window.location='listVendas.php';
+		    alert('Não cadastrado!');
+		    </script>";
+		}
 	} else {
 
 		$sqlConsMov = 'SELECT MAX(codmovimento) AS codmovimento FROM movimento';

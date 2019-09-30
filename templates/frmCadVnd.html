@@ -125,7 +125,11 @@ The above copyright notice and this permission notice shall be included in all c
 						      <select name="vendedor" id="inputEstado" class="form-control">
 						        <option selected>Escolher...</option>
 								{section name=i loop=$codVendedor}
+						        {if $nomeVendedor[i] eq $vendedor}								
+								<option value="{$codVendedor[i]}" selected>{$nomeVendedor[i]}</option>
+								{else}
 								<option value="{$codVendedor[i]}">{$nomeVendedor[i]}</option>
+								{/if}
 								{/section}
 						      </select>
 							</div>
@@ -134,14 +138,23 @@ The above copyright notice and this permission notice shall be included in all c
 						      <select name="formapagamento" id="inputEstado" class="form-control">
 						        <option selected>Escolher...</option>
 								{section name=i loop=$codForma}
+								{if $nomeForma[i] eq $forma}
+								<option value="{$codForma[i]}" selected>{$nomeForma[i]}</option>
+								{else}
 								<option value="{$codForma[i]}">{$nomeForma[i]}</option>
+								{/if}
 								{/section}
 						      </select>
 							</div>
 							<div class="form-group col-md-3">
 							  <label for="inputAddress2">Cliente</label>
+							  {if $operacao neq "editar"}
 							  <input type="text" class="form-control" id="EditboxCliente" placeholder="Digite o cliente">
 							  <input type="hidden" id="codcliente" name="codcliente" value="">
+							  {else}
+							  <input type="text" class="form-control" id="EditboxCliente" value="{$cliente}" placeholder="Digite o cliente">
+							  <input type="hidden" id="codcliente" name="codcliente" value="{$codCli}">
+							  {/if}		
 							</div>
 							<div class="btn-group btn-group-sm" role="group">
 								<button type="submit" class="btn btn-outline-primary btn-sm">Incluir</button>
@@ -151,23 +164,43 @@ The above copyright notice and this permission notice shall be included in all c
 						  <div class="form-row">
 						    <div class="form-group col-md-2">
 						      <label for="inputCity">Telefone</label>
+						      {if $operacao neq "editar"}
 						      <input class="form-control" type="text" id="celular" name="celular" readonly>
+						      {else}
+						      <input class="form-control" type="text" id="celular" name="celular" value="{$celular}" readonly>
+						      {/if}
 						    </div>
 						    <div class="form-group col-md-3">
 						      <label for="inputState">Endereço</label>
+						      {if $operacao neq "editar"}
 						      <input class="form-control" type="text" id="endereco" name="endereco" readonly>
+						      {else}
+						      <input class="form-control" type="text" id="endereco" name="endereco" value="{$endereco}" readonly>
+						      {/if}
 						    </div>
 						    <div class="form-group col-md-2">
 						      <label for="inputZip">Bairro</label>
+						      {if $operacao neq "editar"}
 						      <input class="form-control" type="text" id="bairro" name="bairro" readonly>
+						      {else}
+						      <input class="form-control" type="text" id="bairro" name="bairro" value="{$bairro}" readonly>
+						      {/if}
 						    </div>
-						    <div class="form-group col-md-1">
+						    <div class="form-group col-md-2">
 						      <label for="inputZip">Cidade</label>
+						      {if $operacao neq "editar"}
 						      <input class="form-control" type="text" id="cidade" name="cidade" readonly>
+						      {else}
+						      <input class="form-control" type="text" id="cidade" name="cidade" value="{$cidade}" readonly>
+						      {/if}
 						    </div>
 						    <div class="form-group col-md-1">
 						      <label for="inputZip">UF</label>
+						      {if $operacao neq "editar"}
 						      <input class="form-control" type="text" id="uf" name="uf" readonly>
+						      {else}
+						      <input class="form-control" type="text" id="uf" name="uf" value="{$uf}" readonly>
+						      {/if}
 						    </div>
 						  </div>
 						  <hr>
