@@ -20,9 +20,6 @@ $codcliente = isset ( $_POST ['codcliente'] ) ? $_POST ['codcliente'] : "";
 $modalidade = 'VAREJO';
 $tipomovimento = 'V';
 
-
-
-
 if($codmovimento){
 
 	//Abrindo Transação
@@ -60,28 +57,8 @@ if($codmovimento){
 			if ($regInsertMov == 1 ){
 				pg_query ($conexao, "commit");
 				pg_close($conexao);
-				"SELECT
-				mov.codmovimento AS codmovimento,
-				mov.datamov AS datamov,
-				usu.nome AS vendedor,
-				fpg.forma AS formapagamento,
-				cli.codcliente AS codcliente,
-				cli.nome AS cliente,
-				cli.celular AS celular,
-				cli.endereco AS endereco,
-				cli.cidade AS cidade,
-				cli.bairro AS bairro,
-				cli.uf AS uf
-				FROM
-				movimento mov
-				INNER JOIN
-				usuarios usu ON usu.codusuario = mov.codusuario
-				INNER JOIN
-				clientes cli ON cli.codcliente = mov.codcontato
-				INNER JOIN
-				formapagamentos fpg ON fpg.codforma = mov.codforma"
 				echo "<script>
-			    window.location='listVendas.php';
+			    window.location='frmCadVnd.php?operacao=editar&codmovimento=$idMovimento';
 			    alert('Cadastrado ou atualizado com sucesso!');
 			    </script>";
 			} else {
