@@ -114,13 +114,13 @@ if ($modulo == 'capavenda'){
 	$qntlinha = pg_num_rows ( $resultConsulta );
 	
 	if($qntlinha == 1){
-		$sqlUpdateMov = 'UPDATE movimento SET datamov = '."'$datamov'".',codusuario = '."$vendedor".',codcontato = '."$codcliente".',codforma = '."$formapagamento".' WHERE codmovimento = '."$codmovimento";
+		$sqlUpdateMovItem = 'UPDATE movimento_itens SET qntmov = '."$quant".',vlrunit = '."$vlrunit".',vlrdesconto = '."$vlrdesc".',vlrtotal = '."$vlrtotal".' WHERE codmovimento = '.$codmovimento.' AND codproduto = '.$codproduto.' AND TRIM(grade) = '."'$grade'";
+
+		$resultUpdateMovItem = pg_query($conexao, $sqlUpdateMovItem);
 	
-		$resultUpdateMov = pg_query($conexao, $sqlUpdateMov);
+		$regUpdateMovItem = pg_affected_rows($resultUpdateMovItem);
 	
-		$regUpdateMov = pg_affected_rows($resultUpdateMov);
-	
-		if ($regUpdateMov == 1 ){
+		if ($regUpdateMovItem == 1 ){
 			pg_query ($conexao, "commit");
 			pg_close($conexao);
 			echo "<script>
@@ -131,8 +131,8 @@ if ($modulo == 'capavenda'){
 			pg_query ($conexao, "rollback");
 			pg_close($conexao);
 			echo "<script>
-		    window.location='listVendas.php';
-		    alert('NÃ£o cadastrado!');
+		    window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+		    alert('Item não atualizado!');
 		    </script>";
 		}
 	} else {

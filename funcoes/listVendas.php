@@ -21,7 +21,8 @@ $sqlConsulta = 'select  mov.codmovimento,
 							from movimento mov
 							inner join clientes cli on cli.codcliente = mov.codcontato
 							inner join formapagamentos fon on fon.codforma = mov.codforma
-							inner join usuarios usu on usu.codusuario = mov.codusuario';
+							inner join usuarios usu on usu.codusuario = mov.codusuario
+							ORDER BY mov.codmovimento DESC';
 			
 $resultConsulta = pg_query ( $conexao, $sqlConsulta );
 

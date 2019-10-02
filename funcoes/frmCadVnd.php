@@ -117,7 +117,7 @@ if ($operacao == 'novo'){
 								movimento_itens mvi
 								INNER JOIN
 								produtos pro ON pro.codproduto = mvi.codproduto
-								WHERE codmovimento = ".$codmovimento;
+								WHERE mvi.qntmov > 0 AND codmovimento = ".$codmovimento;
 			
 		$resultConsultaItem = pg_query ( $conexao, $sqlConsultaItem );
 		

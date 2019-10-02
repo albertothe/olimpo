@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-02 14:03:21
+/* Smarty version 3.1.30, created on 2019-10-02 19:27:42
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d949209235865_38362793',
+  'unifunc' => 'content_5d94de0e8ca592_84482614',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1570017795,
+      1 => 1570037257,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d949209235865_38362793 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d94de0e8ca592_84482614 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -426,6 +426,8 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_3_saved;
 ?>
 		                  </table>
 		                </div>
+		                <a href="listVend.php" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                <a href="listVendas.php" class="btn btn-outline-warning pull-right btn-sm btn-round">Cancelar</a>
 					</div>
 				</div>  
             
