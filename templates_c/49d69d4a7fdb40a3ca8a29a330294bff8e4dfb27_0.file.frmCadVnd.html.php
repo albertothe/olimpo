@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-09-27 19:24:16
+/* Smarty version 3.1.30, created on 2019-10-02 14:03:21
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d8e45c008f7c6_84728413',
+  'unifunc' => 'content_5d949209235865_38362793',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1569605049,
+      1 => 1570017795,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d8e45c008f7c6_84728413 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d949209235865_38362793 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -175,9 +175,15 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = new Smarty_Variable(array());
 if ($__section_i_0_total != 0) {
 for ($__section_i_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] = 0; $__section_i_0_iteration <= $__section_i_0_total; $__section_i_0_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']++){
 ?>
+						        <?php if ($_smarty_tpl->tpl_vars['nomeVendedor']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)] == $_smarty_tpl->tpl_vars['vendedor']->value) {?>								
+								<option value="<?php echo $_smarty_tpl->tpl_vars['codVendedor']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+" selected><?php echo $_smarty_tpl->tpl_vars['nomeVendedor']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+</option>
+								<?php } else { ?>
 								<option value="<?php echo $_smarty_tpl->tpl_vars['codVendedor']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 "><?php echo $_smarty_tpl->tpl_vars['nomeVendedor']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 </option>
+								<?php }?>
 								<?php
 }
 }
@@ -199,9 +205,15 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = new Smarty_Variable(array());
 if ($__section_i_1_total != 0) {
 for ($__section_i_1_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] = 0; $__section_i_1_iteration <= $__section_i_1_total; $__section_i_1_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']++){
 ?>
+								<?php if ($_smarty_tpl->tpl_vars['nomeForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)] == $_smarty_tpl->tpl_vars['forma']->value) {?>
+								<option value="<?php echo $_smarty_tpl->tpl_vars['codForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+" selected><?php echo $_smarty_tpl->tpl_vars['nomeForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+</option>
+								<?php } else { ?>
 								<option value="<?php echo $_smarty_tpl->tpl_vars['codForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 "><?php echo $_smarty_tpl->tpl_vars['nomeForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 </option>
+								<?php }?>
 								<?php
 }
 }
@@ -213,35 +225,68 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_1_saved;
 							</div>
 							<div class="form-group col-md-3">
 							  <label for="inputAddress2">Cliente</label>
+							  <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "editar") {?>
 							  <input type="text" class="form-control" id="EditboxCliente" placeholder="Digite o cliente">
 							  <input type="hidden" id="codcliente" name="codcliente" value="">
+							  <?php } else { ?>
+							  <input type="text" class="form-control" id="EditboxCliente" value="<?php echo $_smarty_tpl->tpl_vars['cliente']->value;?>
+" placeholder="Digite o cliente">
+							  <input type="hidden" id="codcliente" name="codcliente" value="<?php echo $_smarty_tpl->tpl_vars['codCli']->value;?>
+">
+							  <?php }?>		
 							</div>
 							<div class="btn-group btn-group-sm" role="group">
 								<button type="submit" class="btn btn-outline-primary btn-sm">Incluir</button>
 								<input type="hidden" id="codmovimento" name="codmovimento" value="<?php echo $_smarty_tpl->tpl_vars['codmovimento']->value;?>
 ">
+								<input type="hidden" id="modulo" name="modulo" value="capavenda">
 							</div>
 						  </div>
 						  <div class="form-row">
 						    <div class="form-group col-md-2">
 						      <label for="inputCity">Telefone</label>
+						      <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "editar") {?>
 						      <input class="form-control" type="text" id="celular" name="celular" readonly>
+						      <?php } else { ?>
+						      <input class="form-control" type="text" id="celular" name="celular" value="<?php echo $_smarty_tpl->tpl_vars['celular']->value;?>
+" readonly>
+						      <?php }?>
 						    </div>
 						    <div class="form-group col-md-3">
 						      <label for="inputState">Endereço</label>
+						      <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "editar") {?>
 						      <input class="form-control" type="text" id="endereco" name="endereco" readonly>
+						      <?php } else { ?>
+						      <input class="form-control" type="text" id="endereco" name="endereco" value="<?php echo $_smarty_tpl->tpl_vars['endereco']->value;?>
+" readonly>
+						      <?php }?>
 						    </div>
 						    <div class="form-group col-md-2">
 						      <label for="inputZip">Bairro</label>
+						      <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "editar") {?>
 						      <input class="form-control" type="text" id="bairro" name="bairro" readonly>
+						      <?php } else { ?>
+						      <input class="form-control" type="text" id="bairro" name="bairro" value="<?php echo $_smarty_tpl->tpl_vars['bairro']->value;?>
+" readonly>
+						      <?php }?>
 						    </div>
-						    <div class="form-group col-md-1">
+						    <div class="form-group col-md-2">
 						      <label for="inputZip">Cidade</label>
+						      <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "editar") {?>
 						      <input class="form-control" type="text" id="cidade" name="cidade" readonly>
+						      <?php } else { ?>
+						      <input class="form-control" type="text" id="cidade" name="cidade" value="<?php echo $_smarty_tpl->tpl_vars['cidade']->value;?>
+" readonly>
+						      <?php }?>
 						    </div>
 						    <div class="form-group col-md-1">
 						      <label for="inputZip">UF</label>
+						      <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "editar") {?>
 						      <input class="form-control" type="text" id="uf" name="uf" readonly>
+						      <?php } else { ?>
+						      <input class="form-control" type="text" id="uf" name="uf" value="<?php echo $_smarty_tpl->tpl_vars['uf']->value;?>
+" readonly>
+						      <?php }?>
 						    </div>
 						  </div>
 						  <hr>
@@ -252,7 +297,7 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_1_saved;
 							<div class="form-group col-md-3">
 							  <label for="inputAddress2">Produto</label>
 							  <input type="text" class="form-control" id="nomeBusca" placeholder="Digite o produto">
-							  <input type="hidden" id="codproduto" value="">
+							  <input type="hidden" id="codproduto" name="codproduto" value="">
 							</div>
 							<div class="form-group col-md-1">
 								<label>Grade</label>
@@ -279,36 +324,108 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 							</div>
 							<div class="form-group col-md-2">
 							  <label for="inputAddress">Quant.</label>
-							  <input type="text" class="form-control" id="inputAddress" placeholder="">
+							  <input type="text" class="form-control" id="inputAddress" name="quant" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">Vlr unit.</label>
-							  <input type="text" class="form-control" id="inputAddress" placeholder="">
+							  <input type="text" class="form-control" id="inputAddress" name="vlrunit" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">$ Desc.</label>
-							  <input type="text" class="form-control" id="inputAddress" placeholder="">
+							  <input type="text" class="form-control" id="inputAddress" name="desc" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">% Desc.</label>
-							  <input type="text" class="form-control" id="inputAddress" placeholder="">
+							  <input type="text" class="form-control" id="inputAddress" name="vlrdesc" placeholder="">
 							</div>		
 							<div class="btn-group btn-group-sm" role="group" aria-label="Exemplo básico">
-							  <button type="button" class="btn btn-outline-primary btn-sm">Incluir</button>
+							  <button type="submit" class="btn btn-outline-primary btn-sm">Incluir</button>
+							  <input type="hidden" id="codmovimento" name="codmovimento" value="<?php echo $_smarty_tpl->tpl_vars['codmovimento']->value;?>
+">
+							  <input type="hidden" id="modulo" name="modulo" value="itemvenda">
 							</div>						
 						  </div>
 						
 						  <hr>
-						  <div class="form-group">
-						    <div class="form-check">
-						      <input class="form-check-input" type="checkbox" id="gridCheck">
-						      <label class="form-check-label" for="gridCheck">
-						      </label>
-						    </div>
-						  </div>
+
 						</form>
  						<?php } else { ?>
  						<?php }?>
+ 						
+		 				<div class="table-responsive">
+		                  <table class="table">
+		                    <thead class=" text-primary">
+		                      <th>
+		                        Codigo
+		                      </th>
+		                      <th>
+		                        Produto
+		                      </th>
+		                      <th>
+		                        Grade
+		                      </th>		           
+		                      <th>
+		                        Unidade
+		                      </th>
+		                      <th>
+		                        Quant.
+		                      </th>
+		                      <th>
+		                        Vlr Unit.
+		                      </th>
+		                      <th>
+		                        Vlr Total
+		                      </th>		                      		                      
+		                    </thead>
+							<?php
+$__section_i_3_saved = isset($_smarty_tpl->tpl_vars['__smarty_section_i']) ? $_smarty_tpl->tpl_vars['__smarty_section_i'] : false;
+$__section_i_3_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['listcodproduto']->value) ? count($_loop) : max(0, (int) $_loop));
+$__section_i_3_total = $__section_i_3_loop;
+$_smarty_tpl->tpl_vars['__smarty_section_i'] = new Smarty_Variable(array());
+if ($__section_i_3_total != 0) {
+for ($__section_i_3_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] = 0; $__section_i_3_iteration <= $__section_i_3_total; $__section_i_3_iteration++, $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']++){
+?>
+		                    <tbody>
+		                      <tr>
+		                        <td>
+		                         <?php echo $_smarty_tpl->tpl_vars['listcodproduto']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                        <td>
+		                          <?php echo $_smarty_tpl->tpl_vars['listproduto']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                        <td>
+		                          <?php echo $_smarty_tpl->tpl_vars['listgrade']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>		                        
+		                        <td>
+		                          <?php echo $_smarty_tpl->tpl_vars['listunidade']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                        <td>
+		                          <?php echo $_smarty_tpl->tpl_vars['listquant']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                        <td>
+		                          <?php echo $_smarty_tpl->tpl_vars['listunit']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                        <td>
+		                          <?php echo $_smarty_tpl->tpl_vars['listtotal']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                      </tr>
+		                    </tbody>
+							<?php
+}
+}
+if ($__section_i_3_saved) {
+$_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_3_saved;
+}
+?>
+		                  </table>
+		                </div>
 					</div>
 				</div>  
             

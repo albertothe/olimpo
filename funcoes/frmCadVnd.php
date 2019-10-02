@@ -86,7 +86,6 @@ if ($operacao == 'novo'){
 	
 	$qntlinha = pg_num_rows ( $resultConsulta );
 	
-	pg_close($conexao);
 	
 	if ($qntlinha == 1){
 
@@ -105,6 +104,49 @@ if ($operacao == 'novo'){
 		$uf = $rs['uf'];
 		$vlrTotal = $rs['vlrtotal'];
 		
+
+		$sqlConsultaItem = "SELECT
+								mvi.codproduto AS listcodproduto,
+								pro.descricao AS listproduto,
+								mvi.grade AS listgrade,
+								pro.unidade AS listunidade,
+								mvi.qntmov AS listquant,
+								mvi.vlrunit AS listunit,
+								mvi.vlrtotal AS listtotal
+								FROM
+								movimento_itens mvi
+								INNER JOIN
+								produtos pro ON pro.codproduto = mvi.codproduto
+								WHERE codmovimento = ".$codmovimento;
+			
+		$resultConsultaItem = pg_query ( $conexao, $sqlConsultaItem );
+		
+		$qntlinhaItem = pg_num_rows ( $resultConsultaItem );
+
+		if ($qntlinhaItem > 0) {
+
+			while ( $obj = pg_fetch_object ( $resultConsultaItem ) ) {
+				$listcodproduto [] = $obj->listcodproduto;
+				$listproduto [] = $obj->listproduto;
+				$listgrade [] = $obj->listgrade;
+				$listunidade [] = $obj->listunidade;
+				$listquant [] = $obj->listquant;
+				$listunit [] = $obj->listunit;
+				$listtotal [] = $obj->listtotal;
+				$indice ++;
+				
+				$smarty->assign ( "listcodproduto", $listcodproduto );
+				$smarty->assign ( "listproduto", $listproduto );
+				$smarty->assign ( "listgrade", $listgrade );
+				$smarty->assign ( "listunidade", $listunidade );
+				$smarty->assign ( "listquant", $listquant );
+				$smarty->assign ( "listunit", $listunit );
+				$smarty->assign ( "listtotal", $listtotal );
+			}
+		
+		}	
+			
+		pg_close($conexao);
 		
 		$smarty->assign ( "codmovimento", $codMovimento );
 		$smarty->assign ( "dataMov", $dataMov);

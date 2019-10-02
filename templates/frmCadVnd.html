@@ -250,6 +250,61 @@ The above copyright notice and this permission notice shall be included in all c
 						</form>
  						{else}
  						{/if}
+ 						
+		 				<div class="table-responsive">
+		                  <table class="table">
+		                    <thead class=" text-primary">
+		                      <th>
+		                        Codigo
+		                      </th>
+		                      <th>
+		                        Produto
+		                      </th>
+		                      <th>
+		                        Grade
+		                      </th>		           
+		                      <th>
+		                        Unidade
+		                      </th>
+		                      <th>
+		                        Quant.
+		                      </th>
+		                      <th>
+		                        Vlr Unit.
+		                      </th>
+		                      <th>
+		                        Vlr Total
+		                      </th>		                      		                      
+		                    </thead>
+							{section name=i loop=$listcodproduto}
+		                    <tbody>
+		                      <tr>
+		                        <td>
+		                         {$listcodproduto[i]}
+		                        </td>
+		                        <td>
+		                          {$listproduto[i]}
+		                        </td>
+		                        <td>
+		                          {$listgrade[i]}
+		                        </td>		                        
+		                        <td>
+		                          {$listunidade[i]}
+		                        </td>
+		                        <td>
+		                          {$listquant[i]}
+		                        </td>
+		                        <td>
+		                          {$listunit[i]}
+		                        </td>
+		                        <td>
+		                          {$listtotal[i]}
+		                        </td>
+		                      </tr>
+		                    </tbody>
+							{/section}
+		                  </table>
+		                </div>
 					</div>
 				</div>  
             

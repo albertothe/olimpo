@@ -13,7 +13,7 @@ $session_codUsuarioLogado = isset ( $_SESSION ["codUsuarioSessao"] ) ? $_SESSION
 
 //Capa da venda
 $codmovimento = isset ( $_POST ['codmovimento'] ) ? $_POST ['codmovimento'] : "";
-$datamov = isset ( $_POST ['datamov'] ) ? $_POST ['datamov'] : date('Y-m-d');
+$datamov = isset ( $_POST ['datamov'] ) ? $_POST ['datamov'] : date('Ymd');
 $vendedor = isset ( $_POST ['vendedor'] ) ? $_POST ['vendedor'] : "";
 $formapagamento = isset ( $_POST ['formapagamento'] ) ? $_POST ['formapagamento'] : "";
 $codcliente = isset ( $_POST ['codcliente'] ) ? $_POST ['codcliente'] : "";
@@ -137,8 +137,8 @@ if ($modulo == 'capavenda'){
 		}
 	} else {
 
-		$sqlInsertItem = "insert into movimento_itens (codmovimento,codproduto,datamov,qntmov,vlrunit,vlrtotal,status,vlrcusto,grade,vlrdesconto)
-		values ('$codmovimento',$codproduto,'$datamov','$quant','$vlrunit','$vlrtotal','P','$vlrcusto','$vlrdesc')";
+		$sqlInsertItem = "insert into movimento_itens (codmovimento,codproduto,grade,datamov,qntmov,vlrunit,vlrtotal,status,vlrcusto,vlrdesconto)
+		values ($codmovimento,$codproduto,'$grade','$datamov',$quant,$vlrunit,$vlrtotal,'P',$vlrcusto,$vlrdesc)";
 
 		$resultInsertMov = pg_query($conexao, $sqlInsertItem);
 			
@@ -148,7 +148,7 @@ if ($modulo == 'capavenda'){
 			pg_query ($conexao, "commit");
 			pg_close($conexao);
 			echo "<script>
-			window.location='frmCadVnd.php?operacao=editar&codmovimento=$idMovimento';
+			window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
 			alert('Cadastrado ou atualizado com sucesso!');
 			</script>";
 		} else {
