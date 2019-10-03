@@ -336,15 +336,12 @@ The above copyright notice and this permission notice shall be included in all c
 							</TR>
 							</TFOOT>
 		                  </table>
-						{else}
- 						{/if}		              
-		                </div>
-		                {if $operacao neq "novo"}
+						</div>
 		                <a href="cadMov.php?modulo=finalizavenda&codmovimento={$codmovimento}" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
-		                {else}
-		                <a href="cadMov.php?modulo=finalizavenda&codmovimento={$codmovimento}" disabled class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
-		                {/if}
 		                <a href="listVendas.php" class="btn btn-outline-warning pull-right btn-sm btn-round">Cancelar</a>
+		  				{else}
+ 						<a href="listVendas.php" class="btn btn-outline-warning pull-right btn-sm btn-round">Cancelar</a>
+ 						{/if}		              
 					</div>
 				</div>  
             
