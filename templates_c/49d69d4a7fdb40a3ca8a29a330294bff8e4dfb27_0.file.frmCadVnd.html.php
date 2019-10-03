@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-02 19:27:42
+/* Smarty version 3.1.30, created on 2019-10-03 02:04:29
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d94de0e8ca592_84482614',
+  'unifunc' => 'content_5d953b0ded4c76_45158319',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1570037257,
+      1 => 1570061068,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d94de0e8ca592_84482614 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d953b0ded4c76_45158319 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -89,6 +89,23 @@ The above copyright notice and this permission notice shall be included in all c
 	});
 	<?php echo '</script'; ?>
 >
+	<?php echo '<script'; ?>
+>
+		document.addEventListener('click', function(e) {
+		  
+		  var self = e.target;
+		  
+		  if(['percdesc','vlrdesc'].indexOf(self.id) !== -1) {
+		    var el = document.getElementById(self.id === 'percdesc' ? 'vlrdesc' : 'percdesc');
+		    
+		    self.removeAttribute('disabled');
+		    
+		    el.setAttribute('disabled','');
+		    el.value = "";
+		  }
+		})
+	<?php echo '</script'; ?>
+>
 </head>
 
 <body class="">
@@ -149,8 +166,9 @@ The above copyright notice and this permission notice shall be included in all c
 			
 				<div class="card">
 					<div class="card-header">
-						<h5 class="card-title">Nova Venda - Nº. <?php echo $_smarty_tpl->tpl_vars['codmovimento']->value;?>
+						    <h5 class="card-title">Nova Venda - Nº. <?php echo $_smarty_tpl->tpl_vars['codmovimento']->value;?>
 </h5>
+    						<h6 class="card-subtitle text-right mb-2 text-muted">Status: Pendente</h6>
 						<hr>
 					</div>
 					        
@@ -332,11 +350,11 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">$ Desc.</label>
-							  <input type="text" class="form-control" id="inputAddress" name="desc" placeholder="">
+							  <input type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">% Desc.</label>
-							  <input type="text" class="form-control" id="inputAddress" name="vlrdesc" placeholder="">
+							  <input type="text" class="form-control" id="vlrdesc" name="vlrdesc" placeholder="">
 							</div>		
 							<div class="btn-group btn-group-sm" role="group" aria-label="Exemplo básico">
 							  <button type="submit" class="btn btn-outline-primary btn-sm">Incluir</button>
