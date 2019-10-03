@@ -264,8 +264,6 @@ The above copyright notice and this permission notice shall be included in all c
 						  <hr>
 
 						</form>
- 						{else}
- 						{/if}
  						
 		 				<div class="table-responsive">
 		                  <table class="table">
@@ -338,9 +336,14 @@ The above copyright notice and this permission notice shall be included in all c
 							</TR>
 							</TFOOT>
 		                  </table>
-		              
+						{else}
+ 						{/if}		              
 		                </div>
-		                <a href="listVend.php" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                {if $operacao neq "novo"}
+		                <a href="cadMov.php?modulo=finalizavenda&codmovimento={$codmovimento}" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                {else}
+		                <a href="cadMov.php?modulo=finalizavenda&codmovimento={$codmovimento}" disabled class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                {/if}
 		                <a href="listVendas.php" class="btn btn-outline-warning pull-right btn-sm btn-round">Cancelar</a>
 					</div>
 				</div>  

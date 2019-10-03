@@ -49,6 +49,8 @@ if ($operacao == 'novo'){
 	
 	$dataMov = date('Y-m-d');
 	
+	$smarty->assign ( "totalVnd", 0);
+	
 	$smarty->assign('codmovimento',$codmovimento);
 	$smarty->assign('operacao',$operacao);
 	$smarty->assign('dataMov',formata_data($dataMov));

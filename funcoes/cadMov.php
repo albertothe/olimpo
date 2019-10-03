@@ -12,7 +12,16 @@ require_once("../includes/funcoes.php");
 $session_codUsuarioLogado = isset ( $_SESSION ["codUsuarioSessao"] ) ? $_SESSION ['codUsuarioSessao'] : "";
 
 //Capa da venda
-$codmovimento = isset ( $_POST ['codmovimento'] ) ? $_POST ['codmovimento'] : "";
+$getMovimento = isset ( $_GET ['codmovimento'] ) ? $_GET ['codmovimento'] : "";
+$postMovimento = isset ( $_POST ['codmovimento'] ) ? $_POST ['codmovimento'] : "";
+
+$codmovimento;
+if ($postMovimento == ''){
+	$codmovimento = $getMovimento;
+} else {
+	$codmovimento = $postMovimento;
+}
+
 $datamov = isset ( $_POST ['datamov'] ) ? $_POST ['datamov'] : date('Ymd');
 $vendedor = isset ( $_POST ['vendedor'] ) ? $_POST ['vendedor'] : "";
 $formapagamento = isset ( $_POST ['formapagamento'] ) ? $_POST ['formapagamento'] : "";
@@ -21,8 +30,15 @@ $modalidade = 'VAREJO';
 $tipomovimento = 'V';
 
 //modulo
-$modulo = isset ( $_POST ['modulo'] ) ? $_POST ['modulo'] : "";
+$getModulo = isset ( $_GET ['modulo'] ) ? $_GET ['modulo'] : "";
+$postModulo = isset ( $_POST ['modulo'] ) ? $_POST ['modulo'] : "";
 
+$modulo;
+if ($postModulo == ''){
+	$modulo = $getModulo;
+} else {
+	$modulo = $postModulo;
+}
 //itens venda
 $codproduto = isset ( $_POST ['codproduto'] ) ? $_POST ['codproduto'] : "";
 $grade = isset ( $_POST ['grade'] ) ? $_POST ['grade'] : "";
@@ -174,9 +190,78 @@ if ($modulo == 'capavenda'){
 		}
 	}
 	
+} elseif ($modulo == 'finalizavenda'){
+	//Abrindo Transação
+	pg_query ($conexao, "begin");
+
+	$faturamentoMov = 'F';
+	$e_s = 'S';
+	$tipoMovimento = 'V';
+
+	$sqlFinalVnd = 'update movimento set "status" = '."'$faturamentoMov'".' where "codmovimento" = ' . "'$codmovimento'";
+	
+	$resultFinalVnd = pg_query($conexao, $sqlFinalVnd);
+	
+	$sqlFinalVndItens = 'update movimento_itens set "status" = '."'$faturamentoMov'".'  where "codmovimento" = ' . "'$codmovimento'";
+	
+	$resulFinalVndItens = pg_query($conexao, $sqlFinalVndItens );
+	
+	$regFinalVnd = pg_affected_rows($resultFinalVnd);
+	$regFinalVndItens = pg_affected_rows($resulFinalVndItens);
+	
+	if ($regFinalVnd == 1 && $regFinalVndItens > 0){
+		try {
+
+			$sqlConsultaItens = "SELECT	codproduto,
+								grade,
+								qntmov
+								FROM
+								movimento_itens
+								WHERE qntmov > 0 AND codmovimento = ".$codmovimento;
+			
+			$resultConsultaItens = pg_query ( $conexao, $sqlConsultaItens );
+			
+			$qntlinhaItens = pg_num_rows ( $resultConsultaItens );
+			
+			if ($qntlinhaItens > 0) {
+				$indice = 0;
+				while ( $obj = pg_fetch_object ( $resultConsultaItens ) ) {
+					//$codproduto [] = $obj->codproduto;
+					//$grade [] = $obj->grade;
+					//$qntEstMov [] = $obj->qntmov;
+		
+					$query = $conn->prepare("SELECT atualizaestoque('$e_s',$obj->codproduto,$obj->qntmov,'$obj->grade',$codmovimento,'$tipoMovimento',$session_codUsuarioLogado);");
+					
+					$indice ++;
+				}
+			
+			}
+			if($query->execute() === false){
+				$error = $query->errorInfo();
+				echo '<font color=\'#ff0000\'>', substr($error[2], 7), '</font>';
+			} else {
+				pg_query ($conexao, "commit");
+				pg_close($conexao);
+				echo "<script>
+				    window.location='listVendas.php';
+				    alert('Cadastrado ou atualizado com sucesso!');
+				    </script>";
+			}
+		} catch(PDOException $pex){
+			echo '<font color=\'#ff0000\'>Ocorreu um erro com a base de dados.</font>';
+			//loga o erro e etc
+		}
+	}
+	pg_query ($conexao, "rollback");
+	pg_close($conexao);
+	echo "<script>
+    window.location='listVendas.php';
+    alert('Venda não finalizada!');
+    </script>";
+
+	
 }
 	
-	
-	
+
 
 ?>

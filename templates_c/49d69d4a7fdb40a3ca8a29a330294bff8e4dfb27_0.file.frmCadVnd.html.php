@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-03 19:02:59
+/* Smarty version 3.1.30, created on 2019-10-04 01:05:43
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d9629c35f4e51_35201496',
+  'unifunc' => 'content_5d967ec790e646_40925560',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1570121941,
+      1 => 1570143940,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9629c35f4e51_35201496 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d967ec790e646_40925560 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -367,8 +367,6 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 						  <hr>
 
 						</form>
- 						<?php } else { ?>
- 						<?php }?>
  						
 		 				<div class="table-responsive">
 		                  <table class="table">
@@ -463,9 +461,16 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_3_saved;
 							</TR>
 							</TFOOT>
 		                  </table>
-		              
+						<?php } else { ?>
+ 						<?php }?>		              
 		                </div>
-		                <a href="listVend.php" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                <?php if ($_smarty_tpl->tpl_vars['operacao']->value != "novo") {?>
+		                <a href="cadMov.php?modulo=finalizavenda&codmovimento=<?php echo $_smarty_tpl->tpl_vars['codmovimento']->value;?>
+" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                <?php } else { ?>
+		                <a href="cadMov.php?modulo=finalizavenda&codmovimento=<?php echo $_smarty_tpl->tpl_vars['codmovimento']->value;?>
+" disabled class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
+		                <?php }?>
 		                <a href="listVendas.php" class="btn btn-outline-warning pull-right btn-sm btn-round">Cancelar</a>
 					</div>
 				</div>  
