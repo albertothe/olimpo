@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-03 02:04:29
+/* Smarty version 3.1.30, created on 2019-10-03 19:02:59
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d953b0ded4c76_45158319',
+  'unifunc' => 'content_5d9629c35f4e51_35201496',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1570061068,
+      1 => 1570121941,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d953b0ded4c76_45158319 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9629c35f4e51_35201496 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -340,21 +340,21 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 ?>
 								</select>
 							</div>
-							<div class="form-group col-md-2">
+							<div class="form-group col-md-1">
 							  <label for="inputAddress">Quant.</label>
 							  <input type="text" class="form-control" id="inputAddress" name="quant" placeholder="">
 							</div>
-							<div class="form-group col-md-1">
+							<div class="form-group col-md-2">
 							  <label for="inputAddress">Vlr unit.</label>
-							  <input type="text" class="form-control" id="inputAddress" name="vlrunit" placeholder="">
+							  <input type="text" class="form-control" id="vlrvnd_rev" name="vlrunit" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">$ Desc.</label>
-							  <input type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
+							  <input type="text" class="form-control" id="vlrdesc" name="vlrdesc" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">% Desc.</label>
-							  <input type="text" class="form-control" id="vlrdesc" name="vlrdesc" placeholder="">
+							  <input type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
 							</div>		
 							<div class="btn-group btn-group-sm" role="group" aria-label="Exemplo básico">
 							  <button type="submit" class="btn btn-outline-primary btn-sm">Incluir</button>
@@ -379,19 +379,22 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 		                      <th>
 		                        Produto
 		                      </th>
-		                      <th>
+		                      <th class="text-center">
 		                        Grade
 		                      </th>		           
-		                      <th>
+		                      <th class="text-center">
 		                        Unidade
 		                      </th>
-		                      <th>
+		                      <th class="text-right">
 		                        Quant.
 		                      </th>
-		                      <th>
+		                      <th class="text-right">
 		                        Vlr Unit.
 		                      </th>
-		                      <th>
+		                      <th class="text-right">
+		                        Vlr Desc.
+		                      </th>		                  
+		                      <th class="text-right">
 		                        Vlr Total
 		                      </th>		                      		                      
 		                    </thead>
@@ -413,23 +416,27 @@ for ($__section_i_3_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']-
 		                          <?php echo $_smarty_tpl->tpl_vars['listproduto']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
 		                        </td>
-		                        <td>
+		                        <td class="text-center">
 		                          <?php echo $_smarty_tpl->tpl_vars['listgrade']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
 		                        </td>		                        
-		                        <td>
+		                        <td class="text-center">
 		                          <?php echo $_smarty_tpl->tpl_vars['listunidade']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
 		                        </td>
-		                        <td>
+		                        <td class="text-right">
 		                          <?php echo $_smarty_tpl->tpl_vars['listquant']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
 		                        </td>
-		                        <td>
+		                        <td class="text-right">
 		                          <?php echo $_smarty_tpl->tpl_vars['listunit']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
 		                        </td>
-		                        <td>
+		                        <td class="text-right">
+		                          <?php echo $_smarty_tpl->tpl_vars['lisdesc']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+
+		                        </td>
+		                        <td class="text-right">
 		                          <?php echo $_smarty_tpl->tpl_vars['listtotal']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
 		                        </td>
@@ -442,7 +449,21 @@ if ($__section_i_3_saved) {
 $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_3_saved;
 }
 ?>
+							<TFOOT>
+							<TR class="table-active">
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="text-right"><strong>Total: <?php echo $_smarty_tpl->tpl_vars['totalVnd']->value;?>
+<strong></td>
+							</TR>
+							</TFOOT>
 		                  </table>
+		              
 		                </div>
 		                <a href="listVend.php" class="btn btn-outline-danger pull-right btn-sm btn-round">Finalizar</a>
 		                <a href="listVendas.php" class="btn btn-outline-warning pull-right btn-sm btn-round">Cancelar</a>

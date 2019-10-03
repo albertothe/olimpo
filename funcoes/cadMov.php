@@ -29,8 +29,9 @@ $grade = isset ( $_POST ['grade'] ) ? $_POST ['grade'] : "";
 $quant = isset ( $_POST ['quant'] ) ? $_POST ['quant'] : "";
 $vlrunit = isset ( $_POST ['vlrunit'] ) ? $_POST ['vlrunit'] : "";
 $vlrdesc = isset ( $_POST ['vlrdesc'] ) ? $_POST ['vlrdesc'] : "";
+$percdesc = isset ( $_POST ['percdesc'] ) ? $_POST ['percdesc'] : "";
 $vlrcusto = 0;
-$vlrtotal = $quant * $vlrunit;
+
 
 if ($modulo == 'capavenda'){
 
@@ -104,6 +105,18 @@ if ($modulo == 'capavenda'){
 
 	}
 } elseif ($modulo == 'itemvenda'){
+	
+	$vlrtotal = $quant * $vlrunit;
+	$desconto = 0;
+	if($vlrdesc <> ''){
+		$desconto = $vlrdesc;
+		$vlrtotal = $vlrtotal - $vlrdesc;
+	} elseif ($percdesc <> ''){
+		$percdesc = $percdesc / 100;
+		$desconto = ($vlrtotal * $percdesc);
+		$vlrtotal = $vlrtotal - ($vlrtotal * $percdesc);
+	}
+
 	//Abrindo Transação
 	pg_query ($conexao, "begin");
 	
@@ -114,7 +127,7 @@ if ($modulo == 'capavenda'){
 	$qntlinha = pg_num_rows ( $resultConsulta );
 	
 	if($qntlinha == 1){
-		$sqlUpdateMovItem = 'UPDATE movimento_itens SET qntmov = '."$quant".',vlrunit = '."$vlrunit".',vlrdesconto = '."$vlrdesc".',vlrtotal = '."$vlrtotal".' WHERE codmovimento = '.$codmovimento.' AND codproduto = '.$codproduto.' AND TRIM(grade) = '."'$grade'";
+		$sqlUpdateMovItem = 'UPDATE movimento_itens SET qntmov = '."$quant".',vlrunit = '."$vlrunit".',vlrdesconto = '."$desconto".',vlrtotal = '."$vlrtotal".' WHERE codmovimento = '.$codmovimento.' AND codproduto = '.$codproduto.' AND TRIM(grade) = '."'$grade'";
 
 		$resultUpdateMovItem = pg_query($conexao, $sqlUpdateMovItem);
 	
@@ -138,7 +151,7 @@ if ($modulo == 'capavenda'){
 	} else {
 
 		$sqlInsertItem = "insert into movimento_itens (codmovimento,codproduto,grade,datamov,qntmov,vlrunit,vlrtotal,status,vlrcusto,vlrdesconto)
-		values ($codmovimento,$codproduto,'$grade','$datamov',$quant,$vlrunit,$vlrtotal,'P',$vlrcusto,$vlrdesc)";
+		values ($codmovimento,$codproduto,'$grade','$datamov',$quant,$vlrunit,$vlrtotal,'P',$vlrcusto,$desconto)";
 
 		$resultInsertMov = pg_query($conexao, $sqlInsertItem);
 			
@@ -155,8 +168,8 @@ if ($modulo == 'capavenda'){
 			pg_query ($conexao, "rollback");
 			pg_close($conexao);
 			echo "<script>
-		    window.location='listEstoques.php';
-		    alert('NÃ£o cadastrado!');
+		    window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+		    alert('Não cadastrado!');
 		    </script>";
 		}
 	}

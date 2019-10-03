@@ -32,10 +32,11 @@ if ($acao == 'autocomplete') {
 if ($acao == 'consulta') {
 	
 	
-	$sql = "SELECT
-				codproduto,
-				descricao
-			 FROM produtos WHERE descricao ILIKE '%$parametro%'";
+	$sql = "select 
+				pro.codproduto AS codproduto,
+				pro.descricao AS descricao,
+				est.vlrvnd_rev AS vlrvnd_rev
+			from produtos pro inner join estoques est on est.codproduto = pro.codproduto WHERE descricao ILIKE '%$parametro%'";
 	$eSql = pg_query ( $conexao, $sql );
 	$registros = pg_num_rows ( $eSql );
 	if ($registros > 0) {
@@ -46,6 +47,7 @@ if ($acao == 'consulta') {
 			$dadosProduto [$i]= array (
 					'codproduto' => $obj->codproduto,
 					'descricao' => substr($obj->descricao,0,34),
+					'vlrvnd_rev' => $obj->vlrvnd_rev,
 			);
 			$i ++;
 		}

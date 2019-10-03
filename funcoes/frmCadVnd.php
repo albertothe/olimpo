@@ -112,6 +112,7 @@ if ($operacao == 'novo'){
 								pro.unidade AS listunidade,
 								mvi.qntmov AS listquant,
 								mvi.vlrunit AS listunit,
+								mvi.vlrdesconto AS lisdesc,
 								mvi.vlrtotal AS listtotal
 								FROM
 								movimento_itens mvi
@@ -124,26 +125,41 @@ if ($operacao == 'novo'){
 		$qntlinhaItem = pg_num_rows ( $resultConsultaItem );
 
 		if ($qntlinhaItem > 0) {
-
+			
+			$sqlConsultaTotVnd = "SELECT SUM(mvi.vlrtotal) AS totalvnd
+								FROM movimento_itens mvi
+								WHERE mvi.qntmov > 0 AND codmovimento = ".$codmovimento;
+				
+			$resultConsultaTotVnd = pg_query ( $conexao, $sqlConsultaTotVnd );
+			
+			$rsTotVnd = pg_fetch_array($resultConsultaTotVnd);
+			
+			$totalVnd = $rsTotVnd['totalvnd'];
+			
 			while ( $obj = pg_fetch_object ( $resultConsultaItem ) ) {
 				$listcodproduto [] = $obj->listcodproduto;
 				$listproduto [] = $obj->listproduto;
 				$listgrade [] = $obj->listgrade;
 				$listunidade [] = $obj->listunidade;
 				$listquant [] = $obj->listquant;
-				$listunit [] = $obj->listunit;
-				$listtotal [] = $obj->listtotal;
+				$listunit [] = formatarValor($obj->listunit);
+				$lisdesc [] = formatarValor($obj->lisdesc);
+				$listtotal [] = formatarValor($obj->listtotal);
 				$indice ++;
 				
-				$smarty->assign ( "listcodproduto", $listcodproduto );
-				$smarty->assign ( "listproduto", $listproduto );
-				$smarty->assign ( "listgrade", $listgrade );
-				$smarty->assign ( "listunidade", $listunidade );
-				$smarty->assign ( "listquant", $listquant );
-				$smarty->assign ( "listunit", $listunit );
-				$smarty->assign ( "listtotal", $listtotal );
+
 			}
-		
+			
+			$smarty->assign ( "listcodproduto", $listcodproduto );
+			$smarty->assign ( "listproduto", $listproduto );
+			$smarty->assign ( "listgrade", $listgrade );
+			$smarty->assign ( "listunidade", $listunidade );
+			$smarty->assign ( "listquant", $listquant );
+			$smarty->assign ( "listunit", $listunit);
+			$smarty->assign ( "lisdesc", $lisdesc);
+			$smarty->assign ( "listtotal", $listtotal);
+			
+			$smarty->assign ( "totalVnd", formatarValor($totalVnd) );
 		}	
 			
 		pg_close($conexao);

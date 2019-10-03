@@ -49,6 +49,7 @@ $(document).ready(function(){
             },
             success: function( data ) {
                $('#codproduto').val(data[0].codproduto);
+               $('#vlrvnd_rev').val(data[0].vlrvnd_rev);
                $('#nomeBusca').val(data[0].descricao);
             }
         });
@@ -60,6 +61,7 @@ $(document).ready(function(){
  
        if(busca == ""){
 	  	   $('#codproduto').val('');
+	  	   $('#vlrvnd_rev').val('');
            $('#nomeBusca').val('')
        }
     }
