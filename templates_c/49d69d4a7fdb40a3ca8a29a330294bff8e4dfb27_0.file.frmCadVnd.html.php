@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-04 01:58:37
+/* Smarty version 3.1.30, created on 2019-10-04 21:33:40
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d968b2d8cd366_57079328',
+  'unifunc' => 'content_5d979e94dd2a29_97809579',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1570147115,
+      1 => 1570217616,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d968b2d8cd366_57079328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d979e94dd2a29_97809579 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -81,6 +81,9 @@ The above copyright notice and this permission notice shall be included in all c
  src="../js/autoCliente.js"><?php echo '</script'; ?>
 >
 	<?php echo '<script'; ?>
+ src="../js/calculosDesconto.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
  type="text/javascript">
 	$(document).ready(function(){
 		$('#nomeBusca').change(function(){
@@ -104,6 +107,59 @@ The above copyright notice and this permission notice shall be included in all c
 		    el.value = "";
 		  }
 		})
+	<?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript">
+	function id(el) {
+	  return document.getElementById( el );
+	}
+	function total( un, qnt ) {
+	  return parseFloat(un.replace(',', '.'), 10) * parseFloat(qnt.replace(',', '.'), 10);
+	}
+	window.onload = function() {
+	  id('vlrvnd_rev').addEventListener('keyup', function() {
+	    var result = total( this.value , id('quant').value );
+	    id('total').value = String(result.toFixed(2)).formatMoney();
+	  });
+	
+	  id('qnt').addEventListener('keyup', function(){
+	    var result = total( id('vlrvnd_rev').value , this.value );
+	    id('total').value = String(result.toFixed(2)).formatMoney();
+	  });
+	}
+	
+	String.prototype.formatMoney = function() {
+	  var v = this;
+	
+	  if(v.indexOf('.') === -1) {
+	    v = v.replace(/([\d]+)/, "$1,00");
+	  }
+	
+	  v = v.replace(/([\d]+)\.([\d]<?php echo 1;?>
+)$/, "$1,$20");
+	  v = v.replace(/([\d]+)\.([\d]<?php echo 2;?>
+)$/, "$1,$2");
+	  v = v.replace(/([\d]+)([\d]<?php echo 3;?>
+),([\d]<?php echo 2;?>
+)$/, "$1.$2,$3");
+	
+	  return v;
+	};
+	<?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ type="text/javascript" src="../js/mask/dist/jquery.mask.min.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+>
+		jQuery(function($){
+			$("#total").mask("###0,00" , { reverse:true});
+			$("#celular").mask("(99) 99999-9999");
+			$("#vlrvnd_rev").mask("###.000,00" , { reverse:true});
+			$("#dataCadastro").mask("99/99/9999");
+		});
+				
 	<?php echo '</script'; ?>
 >
 </head>
@@ -310,7 +366,7 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_1_saved;
 						  <hr>
 						</form>
 						<?php if ($_smarty_tpl->tpl_vars['operacao']->value != "novo") {?>
-						<form action="cadMov.php" method="post">
+						<form id="FormGeral" action="cadMov.php" method="post">
 						  <div class="form-row">
 							<div class="form-group col-md-3">
 							  <label for="inputAddress2">Produto</label>
@@ -342,9 +398,9 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">Quant.</label>
-							  <input type="text" class="form-control" id="inputAddress" name="quant" placeholder="">
+							  <input type="text" class="form-control" id="quant" name="quant" placeholder="">
 							</div>
-							<div class="form-group col-md-2">
+							<div class="form-group col-md-1">
 							  <label for="inputAddress">Vlr unit.</label>
 							  <input type="text" class="form-control" id="vlrvnd_rev" name="vlrunit" placeholder="">
 							</div>
@@ -354,7 +410,11 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">% Desc.</label>
-							  <input type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
+							  <input onkeyup="calcularDescontoVenda()" type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
+							</div>
+							<div class="form-group col-md-1">
+							  <label for="inputAddress">Vlr Total</label>
+							  <input type="text" class="form-control" id="total" name="total" placeholder="">
 							</div>		
 							<div class="btn-group btn-group-sm" role="group" aria-label="Exemplo básico">
 							  <button type="submit" class="btn btn-outline-primary btn-sm">Incluir</button>
@@ -515,9 +575,9 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_3_saved;
   <?php echo '<script'; ?>
  src="../assets/demo/demo.js"><?php echo '</script'; ?>
 >
-  <?php echo '<script'; ?>
+  <!-- <?php echo '<script'; ?>
  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"><?php echo '</script'; ?>
->
+>  -->
 </body>
 
 </html>

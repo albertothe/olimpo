@@ -1,0 +1,10 @@
+<script type="text/javascript" src="../js/mask/dist/jquery.mask.min.js"></script>
+<script>
+	jQuery(function($){
+		//$("#preco").mask("###0.00" , { reverse:true});
+		//$("#valorPagamento").mask("###0.00" , { reverse:true});
+		$("#descontoGeralVenda").mask("###0.00" , { reverse:true});
+		//$("#dataCadastro").mask("99/99/9999");
+	});
+			
+</script>
