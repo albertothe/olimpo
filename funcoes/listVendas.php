@@ -33,8 +33,8 @@ if ($qntlinha > 0) {
 	$indice = 0;
 	while ( $obj = pg_fetch_object ( $resultConsulta ) ) {
 		$codMovimento [] = $obj->codmovimento;
-		$dataMov [] = $obj->datamov;
-		$vlrTotal [] = $obj->vlrtotal;
+		$dataMov [] = formataData($obj->datamov);
+		$vlrTotal [] = formataValor($obj->vlrtotal);
 		$cliente [] = $obj->cliente;
 		$forma [] = $obj->forma;
 		$vendedor [] = $obj->vendedor;

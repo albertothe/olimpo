@@ -3,6 +3,18 @@ function formatarValor($valor) {
 	return number_format ( $valor, 2, ',', '.' );
 }
 
+
+function formataValor($valor) {
+	return number_format ( $valor, 2, ',', '.' );
+}
+
+
+function formataData($data) {
+	list ( $ano, $mes, $dia ) = explode ( "-", $data );
+	return $dia . "/" . $mes . "/" . $ano;
+}
+
+
 function removeNaoLetras2($var) {
 	// $valor = preg_replace ( "/&([a-z])[a-z]+;/i", "$1", htmlentities ( trim ( $var ) ) );
 	$nova_string = preg_replace ( "/[^a-zA-Z0-9]/", " ", $var );
@@ -65,25 +77,25 @@ function formatoReal($valor) {
 /*
  * function trataTxt($var) {
  * // $var = strtolower($var);
- * //$var = ereg_replace ( "[ÃƒÆ’Ã‚Â¡ÃƒÆ’Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã‚Â£Ãƒâ€šÃ‚Âª]", "a", $var );
- * /*$var = preg_replace("[ÃƒÆ’Ã‚Â¡ÃƒÆ’Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã‚Â£Ãƒâ€šÃ‚Âª]", "a", $var);
- * $var = preg_replace ( "[ÃƒÆ’Ã‚Â©ÃƒÆ’Ã‚Â¨ÃƒÆ’Ã‚Âª]", "e", $var );
- * $var = preg_replace ( "[ÃƒÆ’Ã‚Â­ÃƒÆ’Ã‚Â¬ÃƒÆ’Ã‚Â®]", "i", $var );
- * $var = preg_replace ( "[ÃƒÆ’Ã‚Â³ÃƒÆ’Ã‚Â²ÃƒÆ’Ã‚Â´ÃƒÆ’Ã‚ÂµÃƒâ€šÃ‚Âº]", "o", $var );
- * $var = preg_replace ( "[ÃƒÆ’Ã‚ÂºÃƒÆ’Ã‚Â¹ÃƒÆ’Ã‚Â»]", "u", $var );
+ * //$var = ereg_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª]", "a", $var );
+ * /*$var = preg_replace("[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª]", "a", $var);
+ * $var = preg_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âª]", "e", $var );
+ * $var = preg_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â®]", "i", $var );
+ * $var = preg_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â²ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂµÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº]", "o", $var );
+ * $var = preg_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â»]", "u", $var );
  * $var = preg_replace ( "/'/", "", $var );
- * $var = preg_replace ( "/ÃƒÆ’Ã‚Â§/", "c", $var );
+ * $var = preg_replace ( "/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§/", "c", $var );
  * $v = strtoupper ( $var );
  */
 /*
- * $var = str_replace("/ÃƒÆ’Ã‚Â¡ÃƒÆ’Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã‚Â£Ãƒâ€šÃ‚Âª/", "a", $var);
- * $var = str_replace("/ÃƒÆ’Ã‚Â¡/", "a", $var);
- * $var = str_replace ( "[ÃƒÆ’Ã‚Â©ÃƒÆ’Ã‚Â¨ÃƒÆ’Ã‚Âª]", "e", $var );
- * $var = str_replace ( "[ÃƒÆ’Ã‚Â­ÃƒÆ’Ã‚Â¬ÃƒÆ’Ã‚Â®]", "i", $var );
- * $var = str_replace ( "[ÃƒÆ’Ã‚Â³ÃƒÆ’Ã‚Â²ÃƒÆ’Ã‚Â´ÃƒÆ’Ã‚ÂµÃƒâ€šÃ‚Âº]", "o", $var );
- * $var = str_replace ( "[ÃƒÆ’Ã‚ÂºÃƒÆ’Ã‚Â¹ÃƒÆ’Ã‚Â»]", "u", $var );
+ * $var = str_replace("/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª/", "a", $var);
+ * $var = str_replace("/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡/", "a", $var);
+ * $var = str_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âª]", "e", $var );
+ * $var = str_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â®]", "i", $var );
+ * $var = str_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â²ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂµÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº]", "o", $var );
+ * $var = str_replace ( "[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â»]", "u", $var );
  * $var = str_replace ( "/'/", "", $var );
- * $var = str_replace ( "/ÃƒÆ’Ã‚Â§/", "c", $var );
+ * $var = str_replace ( "/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§/", "c", $var );
  * $v = strtoupper ( $var );
  *
  * return $v;
@@ -91,18 +103,18 @@ function formatoReal($valor) {
  */
 /*
  * function trataTxt($string) {
- * $string = preg_replace("/[ÃƒÆ’Ã‚Â¡ÃƒÆ’Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã‚Â£ÃƒÆ’Ã‚Â¤]/", "a", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã¯Â¿Â½ÃƒÆ’Ã¢â€šÂ¬ÃƒÆ’Ã¢â‚¬Å¡ÃƒÆ’Ã†â€™ÃƒÆ’Ã¢â‚¬Å¾]/", "A", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã‚Â©ÃƒÆ’Ã‚Â¨ÃƒÆ’Ã‚Âª]/", "e", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã¢â‚¬Â°ÃƒÆ’Ã‹â€ ÃƒÆ’Ã…Â ]/", "E", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã‚Â­ÃƒÆ’Ã‚Â¬]/", "i", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã¯Â¿Â½ÃƒÆ’Ã…â€™]/", "I", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã‚Â³ÃƒÆ’Ã‚Â²ÃƒÆ’Ã‚Â´ÃƒÆ’Ã‚ÂµÃƒÆ’Ã‚Â¶]/", "o", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã¢â‚¬Å“ÃƒÆ’Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ï¿½ÃƒÆ’Ã¢â‚¬Â¢ÃƒÆ’Ã¢â‚¬â€œ]/", "O", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã‚ÂºÃƒÆ’Ã‚Â¹ÃƒÆ’Ã‚Â¼]/", "u", $string);
- * $string = preg_replace("/[ÃƒÆ’Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢ÃƒÆ’Ã…â€œ]/", "U", $string);
- * $string = preg_replace("/ÃƒÆ’Ã‚Â§/", "c", $string);
- * $string = preg_replace("/ÃƒÆ’Ã¢â‚¬Â¡/", "C", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤]/", "a", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™ÃƒÂ¯Ã‚Â¿Ã‚Â½ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾]/", "A", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âª]/", "e", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â°ÃƒÆ’Ã†â€™Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã†â€™Ãƒâ€¦Ã‚Â ]/", "E", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¬]/", "i", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™ÃƒÂ¯Ã‚Â¿Ã‚Â½ÃƒÆ’Ã†â€™Ãƒâ€¦Ã¢â‚¬â„¢]/", "I", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â²ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂµÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶]/", "o", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¯Â¿Â½ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“]/", "O", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼]/", "u", $string);
+ * $string = preg_replace("/[ÃƒÆ’Ã†â€™Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€¦Ã¢â‚¬Å“]/", "U", $string);
+ * $string = preg_replace("/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§/", "c", $string);
+ * $string = preg_replace("/ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡/", "C", $string);
  * $string = preg_replace("/[][><}{)(:;,!?*%~^`&#@]/", "", $string);
  * $string = preg_replace("/ /", "_", $string);
  * $string = strtoupper($string);
@@ -110,7 +122,7 @@ function formatoReal($valor) {
  * }
  */
 function tiraAcento($url) {
-	$from = "Ãƒâ‚¬Ãƒï¿½ÃƒÆ’Ãƒâ€šÃƒâ€°ÃƒÅ Ãƒï¿½Ãƒâ€œÃƒâ€¢Ãƒâ€�ÃƒÅ¡ÃƒÅ“Ãƒâ€¡ÃƒÂ ÃƒÂ¡ÃƒÂ£ÃƒÂ¢ÃƒÂ©ÃƒÂªÃƒÂ­ÃƒÂ³ÃƒÂµÃƒÂ´ÃƒÂºÃƒÂ¼ÃƒÂ§'";
+	$from = "ÃƒÆ’Ã¢â€šÂ¬ÃƒÆ’Ã¯Â¿Â½ÃƒÆ’Ã†â€™ÃƒÆ’Ã¢â‚¬Å¡ÃƒÆ’Ã¢â‚¬Â°ÃƒÆ’Ã…Â ÃƒÆ’Ã¯Â¿Â½ÃƒÆ’Ã¢â‚¬Å“ÃƒÆ’Ã¢â‚¬Â¢ÃƒÆ’Ã¢â‚¬ï¿½ÃƒÆ’Ã…Â¡ÃƒÆ’Ã…â€œÃƒÆ’Ã¢â‚¬Â¡ÃƒÆ’Ã‚Â ÃƒÆ’Ã‚Â¡ÃƒÆ’Ã‚Â£ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã‚Â©ÃƒÆ’Ã‚ÂªÃƒÆ’Ã‚Â­ÃƒÆ’Ã‚Â³ÃƒÆ’Ã‚ÂµÃƒÆ’Ã‚Â´ÃƒÆ’Ã‚ÂºÃƒÆ’Ã‚Â¼ÃƒÆ’Ã‚Â§'";
 	$to = "aaaaeeiooouucaaaaeeiooouuc ";
 
 	$rull = strtr ( $url, $from, $to );
@@ -118,36 +130,37 @@ function tiraAcento($url) {
 }
 function tirarAcentos($string) {
 	return preg_replace ( array (
-			"/(ÃƒÂ¡|ÃƒÂ |ÃƒÂ£|ÃƒÂ¢|ÃƒÂ¤)/",
-			"/(Ãƒï¿½|Ãƒâ‚¬|ÃƒÆ’|Ãƒâ€š|Ãƒâ€ž)/",
-			"/(ÃƒÂ©|ÃƒÂ¨|ÃƒÂª|ÃƒÂ«)/",
-			"/(Ãƒâ€°|ÃƒË†|ÃƒÅ |Ãƒâ€¹)/",
-			"/(ÃƒÂ­|ÃƒÂ¬|ÃƒÂ®|ÃƒÂ¯)/",
-			"/(Ãƒï¿½|ÃƒÅ’|ÃƒÅ½|Ãƒï¿½)/",
-			"/(ÃƒÂ³|ÃƒÂ²|ÃƒÂµ|ÃƒÂ´|ÃƒÂ¶)/",
-			"/(Ãƒâ€œ|Ãƒâ€™|Ãƒâ€¢|Ãƒâ€�|Ãƒâ€“)/",
-			"/(ÃƒÂº|ÃƒÂ¹|ÃƒÂ»|ÃƒÂ¼)/",
-			"/(ÃƒÅ¡|Ãƒâ„¢|Ãƒâ€º|ÃƒÅ“)/",
-			"/(ÃƒÂ±)/",
-			"/(Ãƒâ€˜)/"
+			"/(ÃƒÆ’Ã‚Â¡|ÃƒÆ’Ã‚Â |ÃƒÆ’Ã‚Â£|ÃƒÆ’Ã‚Â¢|ÃƒÆ’Ã‚Â¤)/",
+			"/(ÃƒÆ’Ã¯Â¿Â½|ÃƒÆ’Ã¢â€šÂ¬|ÃƒÆ’Ã†â€™|ÃƒÆ’Ã¢â‚¬Å¡|ÃƒÆ’Ã¢â‚¬Å¾)/",
+			"/(ÃƒÆ’Ã‚Â©|ÃƒÆ’Ã‚Â¨|ÃƒÆ’Ã‚Âª|ÃƒÆ’Ã‚Â«)/",
+			"/(ÃƒÆ’Ã¢â‚¬Â°|ÃƒÆ’Ã‹â€ |ÃƒÆ’Ã…Â |ÃƒÆ’Ã¢â‚¬Â¹)/",
+			"/(ÃƒÆ’Ã‚Â­|ÃƒÆ’Ã‚Â¬|ÃƒÆ’Ã‚Â®|ÃƒÆ’Ã‚Â¯)/",
+			"/(ÃƒÆ’Ã¯Â¿Â½|ÃƒÆ’Ã…â€™|ÃƒÆ’Ã…Â½|ÃƒÆ’Ã¯Â¿Â½)/",
+			"/(ÃƒÆ’Ã‚Â³|ÃƒÆ’Ã‚Â²|ÃƒÆ’Ã‚Âµ|ÃƒÆ’Ã‚Â´|ÃƒÆ’Ã‚Â¶)/",
+			"/(ÃƒÆ’Ã¢â‚¬Å“|ÃƒÆ’Ã¢â‚¬â„¢|ÃƒÆ’Ã¢â‚¬Â¢|ÃƒÆ’Ã¢â‚¬ï¿½|ÃƒÆ’Ã¢â‚¬â€œ)/",
+			"/(ÃƒÆ’Ã‚Âº|ÃƒÆ’Ã‚Â¹|ÃƒÆ’Ã‚Â»|ÃƒÆ’Ã‚Â¼)/",
+			"/(ÃƒÆ’Ã…Â¡|ÃƒÆ’Ã¢â€žÂ¢|ÃƒÆ’Ã¢â‚¬Âº|ÃƒÆ’Ã…â€œ)/",
+			"/(ÃƒÆ’Ã‚Â±)/",
+			"/(ÃƒÆ’Ã¢â‚¬Ëœ)/"
 	), explode ( " ", "a A e E i I o O u U n N" ), $string );
 	return $string;
 	// echo tirarAcentos ( $string );
 }
 function trataTxt($var) {
-	$from = 'Ãƒâ‚¬Ãƒï¿½ÃƒÆ’Ãƒâ€šÃƒâ€°ÃƒÅ Ãƒï¿½Ãƒâ€œÃƒâ€¢Ãƒâ€�ÃƒÅ¡ÃƒÅ“Ãƒâ€¡ÃƒÂ ÃƒÂ¡ÃƒÂ£ÃƒÂ¢ÃƒÂ©ÃƒÂªÃƒÂ­ÃƒÂ³ÃƒÂµÃƒÂ´ÃƒÂºÃƒÂ¼ÃƒÂ§ ';
+	$from = 'ÃƒÆ’Ã¢â€šÂ¬ÃƒÆ’Ã¯Â¿Â½ÃƒÆ’Ã†â€™ÃƒÆ’Ã¢â‚¬Å¡ÃƒÆ’Ã¢â‚¬Â°ÃƒÆ’Ã…Â ÃƒÆ’Ã¯Â¿Â½ÃƒÆ’Ã¢â‚¬Å“ÃƒÆ’Ã¢â‚¬Â¢ÃƒÆ’Ã¢â‚¬ï¿½ÃƒÆ’Ã…Â¡ÃƒÆ’Ã…â€œÃƒÆ’Ã¢â‚¬Â¡ÃƒÆ’Ã‚Â ÃƒÆ’Ã‚Â¡ÃƒÆ’Ã‚Â£ÃƒÆ’Ã‚Â¢ÃƒÆ’Ã‚Â©ÃƒÆ’Ã‚ÂªÃƒÆ’Ã‚Â­ÃƒÆ’Ã‚Â³ÃƒÆ’Ã‚ÂµÃƒÆ’Ã‚Â´ÃƒÆ’Ã‚ÂºÃƒÆ’Ã‚Â¼ÃƒÆ’Ã‚Â§ ';
 	$to = 'aaaaeeiooouucaaaaeeiooouuc-';
 
 	$rull = strtr ( $var, $from, $to );
 	return strtoupper ( $rull );
 }
-// echo "Texto com acento:" . "ÃƒÆ’Ã‚Â¡ ÃƒÆ’Ã‚Â© ÃƒÆ’Ã‚Â­ ÃƒÆ’Ã‚Â³ ÃƒÆ’Ã‚Âº";
+// echo "Texto com acento:" . "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº";
 // echo "<br>";
-// echo "Texto sem acento:" . trataTxt("ÃƒÆ’Ã‚Â¡ ÃƒÆ’Ã‚Â© ÃƒÆ’Ã‚Â­ ÃƒÆ’Ã‚Â³ ÃƒÆ’Ã‚Âº");
+// echo "Texto sem acento:" . trataTxt("ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº");
 function formata_data($data) {
 	list ( $ano, $mes, $dia ) = explode ( "-", $data );
 	return $dia . "/" . $mes . "/" . $ano;
 }
+
 function formata_data2($data) {
 	$data = strtotime ( $dataMovimentoV [$i] );
 	return $da [$i] = date ( 'd-m-Y', $data );
@@ -240,7 +253,7 @@ function subDatas($datae, $datar) {
 	$data2 = strtotime ( $datae );
 	// $dat1 = strtotime("2005-04-06");
 	// $dat2 = strtotime("2005-04-09");
-	$intervalo = (($data2 - $data1) / 86400) + 1; // transformaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o do timestamp em dias
+	$intervalo = (($data2 - $data1) / 86400) + 1; // transformaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do timestamp em dias
 	return $intervalo;
 }
 function diffDate($d1, $d2, $type = '', $sep = '-') {
@@ -270,36 +283,36 @@ function diffDate($d1, $d2, $type = '', $sep = '-') {
 	$data1 = mktime ( $d2 [1], $d2 [2], $d2 [0] );
 	$data2 = mktime ( $d1 [1], $d1 [2], $d1 [0] );
 	$dias = ($data1 - $data2) / $X;
-	// return floor( ( ( mktime(0, 0, 0, $d2[1], $d2[2], $d2[0]) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ mktime(0, 0, 0, $d1[1], $d1[2], $d1[0] ) ) / $X ) );
+	// return floor( ( ( mktime(0, 0, 0, $d2[1], $d2[2], $d2[0]) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ mktime(0, 0, 0, $d1[1], $d1[2], $d1[0] ) ) / $X ) );
 	// mktime($hour, $minute, $second, $month, $day, $year, $is_dst)
 	return $dias;
 }
 /*
- * Calcular diferenÃƒÆ’Ã‚Â§a em Minutos (3Ãƒâ€šÃ‚Âº parÃƒÆ’Ã‚Â¢metro MI).
+ * Calcular diferenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§a em Minutos (3ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº parÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢metro MI).
  * <?php
  * $d1 = "2011-01-01";
  * $d2 = "2011-02-01";
  * echo diffDate($d1,$d2,'MI');
  * ?>
- * Calcular diferenÃƒÆ’Ã‚Â§a entre Anos (3Ãƒâ€šÃ‚Âº parÃƒÆ’Ã‚Â¢metro A).
+ * Calcular diferenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§a entre Anos (3ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº parÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢metro A).
  * <?php
  * $d1 = "2010-01-01";
  * $d2 = "2011-01-01";
  * echo diffDate($d1,$d2,'A');
  * ?>
- * Calcular diferenÃƒÆ’Ã‚Â§a em Horas (3Ãƒâ€šÃ‚Âº parÃƒÆ’Ã‚Â¢metro H).
+ * Calcular diferenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§a em Horas (3ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº parÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢metro H).
  * <?php
  * $d1 = "2011-01-01";
  * $d2 = "2011-02-01";
  * echo diffDate($d1,$d2,'H');
  * ?>
- * Calcular diferenÃƒÆ’Ã‚Â§a em Dias com separador ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ/ÃƒÂ¢Ã¢â€šÂ¬Ã¯Â¿Â½ (3Ãƒâ€šÃ‚Âº parÃƒÆ’Ã‚Â¢metro D e 4Ãƒâ€šÃ‚Âº parÃƒÆ’Ã‚Â¢metro / ).
+ * Calcular diferenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§a em Dias com separador ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“/ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¯Ã‚Â¿Ã‚Â½ (3ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº parÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢metro D e 4ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº parÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢metro / ).
  * <?php
  * $d1 = "2011/01/01";
  * $d2 = "2011/02/01";
  * echo diffDate($d1,$d2,'D',"/");
  * ?>
- * Calcular diferenÃƒÆ’Ã‚Â§a em Segundos (omitindo o 3Ãƒâ€šÃ‚Âº e 4Ãƒâ€šÃ‚Âº parÃƒÆ’Ã‚Â¢metro ).
+ * Calcular diferenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§a em Segundos (omitindo o 3ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº e 4ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âº parÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢metro ).
  * <?php
  * $d1 = "2011-01-01";
  * $d2 = "2011-02-01";
@@ -307,7 +320,7 @@ function diffDate($d1, $d2, $type = '', $sep = '-') {
  * ?>
  */
 
-// SaudaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o - by Jurandir Monteiro Prestes - jmprestes@bol.com.br
+// SaudaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o - by Jurandir Monteiro Prestes - jmprestes@bol.com.br
 /*
  * $hora_atual=date("H");
  * if ($hora_atual>=5&$hora_atual<=11) {
@@ -346,8 +359,8 @@ function diferencaDatas($dataAtual, $dataChamado) {
 	// return $diferenca = $intervalo->d;
 	return $intervalo;
 
-	// echo "Intervalo ÃƒÆ’Ã‚Â© de {$intervalo->y} anos, {$intervalo->m} meses e {$intervalo->d} dias";
-	// echo "Intervalo ÃƒÆ’Ã‚Â© de {$intervalo->y} anos, {$intervalo->m} meses e {$intervalo->d} dias";
+	// echo "Intervalo ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© de {$intervalo->y} anos, {$intervalo->m} meses e {$intervalo->d} dias";
+	// echo "Intervalo ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© de {$intervalo->y} anos, {$intervalo->m} meses e {$intervalo->d} dias";
 }
 function reduzData($diff) {
 	/*
@@ -373,7 +386,7 @@ function reduzData($diff) {
 }
 function removeAcentos($string, $slug = false) {
 	// $string = strtoupper($string);
-	// CÃƒÂ³digo ASCII das vogais
+	// CÃƒÆ’Ã‚Â³digo ASCII das vogais
 	$ascii ['a'] = range ( 224, 230 );
 	$ascii ['e'] = range ( 232, 235 );
 	$ascii ['i'] = range ( 236, 239 );
@@ -382,7 +395,7 @@ function removeAcentos($string, $slug = false) {
 			248
 	) );
 	$ascii ['u'] = range ( 249, 252 );
-	// CÃƒÂ³digo ASCII dos outros caracteres
+	// CÃƒÆ’Ã‚Â³digo ASCII dos outros caracteres
 	$ascii ['b'] = array (
 			223
 	);
@@ -408,7 +421,7 @@ function removeAcentos($string, $slug = false) {
 	$string = preg_replace ( array_values ( $troca ), array_keys ( $troca ), $string );
 	// Slug?
 	if ($slug) {
-		// Troca tudo que nÃƒÂ£o for letra ou nÃƒÂºmero por um caractere ($slug)
+		// Troca tudo que nÃƒÆ’Ã‚Â£o for letra ou nÃƒÆ’Ã‚Âºmero por um caractere ($slug)
 		$string = preg_replace ( '/[^a-z0-9]/i', $slug, $string );
 		// Tira os caracteres ($slug) repetidos
 		$string = preg_replace ( '/' . $slug . '{2,}/i', $slug, $string );
@@ -419,7 +432,7 @@ function removeAcentos($string, $slug = false) {
 
 function convertem($term) {
 
-	$palavra = strtr(strtoupper($term),"Ã Ã¡Ã¢Ã£Ã¤Ã¥Ã¦Ã§Ã¨Ã©ÃªÃ«Ã¬Ã­Ã®Ã¯Ã°Ã±Ã²Ã³Ã´ÃµÃ¶Ã·Ã¸Ã¹Ã¼ÃºÃ¾Ã¿","Ã€Ã�Ã‚ÃƒÃ„Ã…Ã†Ã‡ÃˆÃ‰ÃŠÃ‹ÃŒÃ�ÃŽÃ�Ã�Ã‘Ã’Ã“Ã”Ã•Ã–Ã—Ã˜Ã™ÃœÃšÃžÃŸ");
+	$palavra = strtr(strtoupper($term),"ÃƒÂ ÃƒÂ¡ÃƒÂ¢ÃƒÂ£ÃƒÂ¤ÃƒÂ¥ÃƒÂ¦ÃƒÂ§ÃƒÂ¨ÃƒÂ©ÃƒÂªÃƒÂ«ÃƒÂ¬ÃƒÂ­ÃƒÂ®ÃƒÂ¯ÃƒÂ°ÃƒÂ±ÃƒÂ²ÃƒÂ³ÃƒÂ´ÃƒÂµÃƒÂ¶ÃƒÂ·ÃƒÂ¸ÃƒÂ¹ÃƒÂ¼ÃƒÂºÃƒÂ¾ÃƒÂ¿","Ãƒâ‚¬Ãƒï¿½Ãƒâ€šÃƒÆ’Ãƒâ€žÃƒâ€¦Ãƒâ€ Ãƒâ€¡ÃƒË†Ãƒâ€°ÃƒÅ Ãƒâ€¹ÃƒÅ’Ãƒï¿½ÃƒÅ½Ãƒï¿½Ãƒï¿½Ãƒâ€˜Ãƒâ€™Ãƒâ€œÃƒâ€�Ãƒâ€¢Ãƒâ€“Ãƒâ€”ÃƒËœÃƒâ„¢ÃƒÅ“ÃƒÅ¡ÃƒÅ¾ÃƒÅ¸");
 
 	return $palavra;
  

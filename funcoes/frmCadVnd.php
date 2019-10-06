@@ -53,7 +53,7 @@ if ($operacao == 'novo'){
 	
 	$smarty->assign('codmovimento',$codmovimento);
 	$smarty->assign('operacao',$operacao);
-	$smarty->assign('dataMov',formata_data($dataMov));
+	$smarty->assign('dataMov',$dataMov);
 	$smarty->assign('data_hoje',data_extenso());
 	$smarty->assign ('session_usuarioLogado', $session_usuarioLogado );
 	$smarty->assign ('session_codUsuarioLogado', $session_codUsuarioLogado );
@@ -106,7 +106,8 @@ if ($operacao == 'novo'){
 		$uf = $rs['uf'];
 		$vlrTotal = $rs['vlrtotal'];
 		
-
+		$smarty->assign ( "totalVnd", "0");
+		
 		$sqlConsultaItem = "SELECT
 								mvi.codproduto AS listcodproduto,
 								pro.descricao AS listproduto,

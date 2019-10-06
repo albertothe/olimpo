@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-04 21:33:40
+/* Smarty version 3.1.30, created on 2019-10-06 00:25:01
   from "c:\xampp\htdocs\olimpo\templates\frmCadVnd.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d979e94dd2a29_97809579',
+  'unifunc' => 'content_5d99183d60e3c1_73552635',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49d69d4a7fdb40a3ca8a29a330294bff8e4dfb27' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\frmCadVnd.html',
-      1 => 1570217616,
+      1 => 1570314078,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d979e94dd2a29_97809579 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d99183d60e3c1_73552635 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -406,11 +406,11 @@ $_smarty_tpl->tpl_vars['__smarty_section_i'] = $__section_i_2_saved;
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">$ Desc.</label>
-							  <input type="text" class="form-control" id="vlrdesc" name="vlrdesc" placeholder="">
+							  <input onkeyup="calcularDescontoValor()" type="text" class="form-control" id="vlrdesc" name="vlrdesc" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">% Desc.</label>
-							  <input onkeyup="calcularDescontoVenda()" type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
+							  <input onkeyup="calcularDescontoPerc()" type="text" class="form-control" id="percdesc" name="percdesc" placeholder="">
 							</div>
 							<div class="form-group col-md-1">
 							  <label for="inputAddress">Vlr Total</label>

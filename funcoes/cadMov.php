@@ -150,12 +150,38 @@ if ($modulo == 'capavenda'){
 		$regUpdateMovItem = pg_affected_rows($resultUpdateMovItem);
 	
 		if ($regUpdateMovItem == 1 ){
-			pg_query ($conexao, "commit");
-			pg_close($conexao);
-			echo "<script>
-			window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
-			alert('Cadastrado ou atualizado com sucesso!');
-			</script>";
+			
+			$sqlConsultaTotVnd = "SELECT SUM(mvi.vlrtotal) AS totalvnd
+								FROM movimento_itens mvi
+								WHERE mvi.qntmov > 0 AND codmovimento = ".$codmovimento;
+				
+			$resultConsultaTotVnd = pg_query ( $conexao, $sqlConsultaTotVnd );
+			
+			$rsTotVnd = pg_fetch_array($resultConsultaTotVnd);
+			
+			$totalVnd = $rsTotVnd['totalvnd'];
+				
+			$SqltotalVnd = 'update movimento set vlrtotal  = '."$totalVnd".' where codmovimento = '."$codmovimento";
+			
+			$resulTotalVnd = pg_query($conexao, $SqltotalVnd);
+				
+			$regUpdateTotal = pg_affected_rows($resulTotalVnd);
+				
+			if ($regUpdateTotal == 1 ){
+				pg_query ($conexao, "commit");
+				pg_close($conexao);
+				echo "<script>
+				window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+				alert('Cadastrado ou atualizado com sucesso!');
+				</script>";
+			} else {
+				pg_query ($conexao, "rollback");
+				pg_close($conexao);
+				echo "<script>
+				window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+				alert('Item não atualizado!');
+				</script>";				
+			}
 		} else {
 			pg_query ($conexao, "rollback");
 			pg_close($conexao);
@@ -174,12 +200,38 @@ if ($modulo == 'capavenda'){
 		$regInsertMov = pg_affected_rows($resultInsertMov);
 			
 		if ($regInsertMov == 1 ){
-			pg_query ($conexao, "commit");
-			pg_close($conexao);
-			echo "<script>
-			window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
-			alert('Cadastrado ou atualizado com sucesso!');
-			</script>";
+			
+			$sqlConsultaTotVnd = "SELECT SUM(mvi.vlrtotal) AS totalvnd
+								FROM movimento_itens mvi
+								WHERE mvi.qntmov > 0 AND codmovimento = ".$codmovimento;
+			
+			$resultConsultaTotVnd = pg_query ( $conexao, $sqlConsultaTotVnd );
+				
+			$rsTotVnd = pg_fetch_array($resultConsultaTotVnd);
+				
+			$totalVnd = $rsTotVnd['totalvnd'];
+			
+			$SqltotalVnd = 'update movimento set vlrtotal  = '."$totalVnd".' where codmovimento = '."$codmovimento";
+
+			$resulTotalVnd = pg_query($conexao, $SqltotalVnd);			
+			
+			$regUpdateTotal = pg_affected_rows($resulTotalVnd);
+			
+			if ($regUpdateTotal == 1 ){
+				pg_query ($conexao, "commit");
+				pg_close($conexao);
+				echo "<script>
+				window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+				alert('Cadastrado ou atualizado com sucesso!');
+				</script>";
+			} else {
+				pg_query ($conexao, "rollback");
+				pg_close($conexao);
+				echo "<script>
+				window.location='frmCadVnd.php?operacao=editar&codmovimento=$codmovimento';
+				alert('Não cadastrado!');
+				</script>";				
+			}
 		} else {
 			pg_query ($conexao, "rollback");
 			pg_close($conexao);

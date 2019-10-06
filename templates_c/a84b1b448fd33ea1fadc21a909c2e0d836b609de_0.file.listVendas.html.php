@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-09-23 19:18:15
+/* Smarty version 3.1.30, created on 2019-10-07 01:10:07
   from "c:\xampp\htdocs\olimpo\templates\listVendas.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d88fe57c0e5d8_70675880',
+  'unifunc' => 'content_5d9a744fc44d78_75388008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a84b1b448fd33ea1fadc21a909c2e0d836b609de' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\listVendas.html',
-      1 => 1569194524,
+      1 => 1570403405,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d88fe57c0e5d8_70675880 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9a744fc44d78_75388008 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -134,13 +134,13 @@ The above copyright notice and this permission notice shall be included in all c
                         Codigo
                       </th>
                       <th>
-                        Data
-                      </th>
-                      <th>
-                        VlrMov
-                      </th>
-                      <th>
                         Cliente
+                      </th>
+                      <th class="text-right">
+                        Vlr. Venda
+                      </th>
+                      <th class="text-center">
+                        Data
                       </th>
                       <th>
                         Forma
@@ -170,15 +170,15 @@ for ($__section_i_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']-
 
                         </td>
                         <td>
-                          <?php echo $_smarty_tpl->tpl_vars['dataMov']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+                          <?php echo $_smarty_tpl->tpl_vars['cliente']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
                         </td>
-						<td>
+						<td class="text-right">
                           <?php echo $_smarty_tpl->tpl_vars['vlrTotal']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
                         </td>
-                        <td>
-                          <?php echo $_smarty_tpl->tpl_vars['cliente']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+                        <td class="text-center">
+                          <?php echo $_smarty_tpl->tpl_vars['dataMov']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 
                         </td>
                         <td>
