@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-07 01:10:07
+/* Smarty version 3.1.30, created on 2019-10-08 01:54:05
   from "c:\xampp\htdocs\olimpo\templates\listVendas.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d9a744fc44d78_75388008',
+  'unifunc' => 'content_5d9bd01d4d9547_97031211',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a84b1b448fd33ea1fadc21a909c2e0d836b609de' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\listVendas.html',
-      1 => 1570403405,
+      1 => 1570492292,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9a744fc44d78_75388008 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9bd01d4d9547_97031211 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -97,9 +97,6 @@ The above copyright notice and this permission notice shall be included in all c
 			  <li class="nav-item btn-rotate dropdown">
                 <a class="nav-link dropdown-toggle" href="http://45.79.24.109/olimpo/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="nc-icon nc-settings-gear-65"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Some Actions</span>
-                  </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="frmCadUsua.php?operacao=ver&codusuario=<?php echo $_smarty_tpl->tpl_vars['session_codUsuarioLogado']->value;?>
