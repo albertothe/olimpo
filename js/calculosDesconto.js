@@ -1,5 +1,4 @@
 function calcularDescontoPerc(){
-				alert("teste");
 				//--------------- digitando o valor de desconto geral ---------------------
 				var valorPadrao = FormGeral.total.value;
 				var valorPadrao = parseFloat(valorPadrao);
