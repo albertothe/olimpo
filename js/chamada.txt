@@ -5,6 +5,7 @@
 		//$("#valorPagamento").mask("###0.00" , { reverse:true});
 		$("#descontoGeralVenda").mask("###0.00" , { reverse:true});
 		//$("#dataCadastro").mask("99/99/9999");
+		//otimo teste
 	});
 			
 </script>
