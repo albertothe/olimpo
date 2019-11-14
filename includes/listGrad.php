@@ -8,13 +8,14 @@ require_once("conexao.php");
 
 $codproduto = $_GET['codproduto'];
 
-$sqlConsulta = 'select "idgrade","grade" from "grades" where "codproduto" = '.$codproduto.' order by "grade"';
+$sqlConsulta = 'select "idgrade","grade","qntestoque" from "grades" where "codproduto" = '.$codproduto.' order by "grade"';
 			
 $resultConsulta = pg_query ( $conexao, $sqlConsulta );
 
 $qntlinha = pg_num_rows ( $resultConsulta );
 
 pg_close($conexao);
+
 /*
 if ($qntlinha > 0) {
 	$indice = 0;
@@ -32,7 +33,7 @@ $smarty->assign ( "grade", $grade );
 
 echo "<label>Grades: </label><select name='grade' class='browser-default custom-select'>";
 while($reg = pg_fetch_object($resultConsulta)){
-	echo "<option value='$reg->grade'>$reg->grade</option>";
+	echo "<option value='$reg->grade'>$reg->grade ($reg->qntestoque)</option>";
 }
 echo "</select>";
 
