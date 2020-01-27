@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-10-08 01:54:05
+/* Smarty version 3.1.30, created on 2020-01-27 17:33:56
   from "c:\xampp\htdocs\olimpo\templates\listVendas.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d9bd01d4d9547_97031211',
+  'unifunc' => 'content_5e2f10f43cb079_73792918',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a84b1b448fd33ea1fadc21a909c2e0d836b609de' => 
     array (
       0 => 'c:\\xampp\\htdocs\\olimpo\\templates\\listVendas.html',
-      1 => 1570492292,
+      1 => 1580142829,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9bd01d4d9547_97031211 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2f10f43cb079_73792918 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--
 =========================================================
@@ -193,7 +193,7 @@ for ($__section_i_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']-
 						<td>
 							<a class="btn btn-outline-success btn-sm" href="frmCadForm.php?operacao=ver&codforma=<?php echo $_smarty_tpl->tpl_vars['codForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 ">Ver</a>
-							<a class="btn btn-outline-warning btn-sm" href="frmCadForm.php?operacao=editar&codforma=<?php echo $_smarty_tpl->tpl_vars['codForma']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
+							<a class="btn btn-outline-warning btn-sm" href="gerarNota.php?codmovimento=<?php echo $_smarty_tpl->tpl_vars['codMovimento']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 ">Imprimir</a>
 							<!-- <a class="btn btn-outline-danger btn-sm"  href="listaGrade.php?codproduto=<?php echo $_smarty_tpl->tpl_vars['codProduto']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)];?>
 " data-toggle="modal" data-target="#delete-modal">Cancelar</a> -->
