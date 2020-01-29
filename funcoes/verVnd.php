@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <?php
-require 'funcoes/verificar.php';
-include 'global.php';
-include 'funcoes/conexao.php';
-include 'funcoes/funcoes.php';
-if ($perfilUsuario === 'ADMINISTRADOR'){
-	require 'menu.php'; 	
-} else {
-	require 'menuV.php';
-}
+header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+header("Pragma: no-cache"); // HTTP 1.0.
+header("Expires: 0"); // Proxies.
+require_once("../includes/configuracoes.php"); //ok
+require_once("../includes/funcoes.php"); //ok
+require_once("../includes/verificar.php");
+require_once("../includes/conexao.php");
+require_once("../includes/listVend.php");
+require_once("../includes/listForm.php");
+//require_once("../includes/listClie.php");
+
+$session_usuarioLogado = isset ( $_SESSION ["nomeUsuarioSessao"] ) ? $_SESSION ['nomeUsuarioSessao'] : "";
+$session_codUsuarioLogado = isset ( $_SESSION ["codUsuarioSessao"] ) ? $_SESSION ['codUsuarioSessao'] : "";
 						
 $codmovimento = $_GET['codmovimento'];
 
